@@ -1,0 +1,98 @@
+:root {
+    --highlight: #6756FF;
+    --alt: #808080;
+}
+
+article#resume-header p.resume-name {
+    font-size: 43px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+article#resume-header p.resume-sub-name {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+article#resume-header p.info {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+article#resume-header p.info a {
+    text-decoration: underline;
+}
+
+article#resume h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: var(--highlight);
+}
+
+article#resume h4 {
+    color: var(--highlight);
+}
+
+article#resume section p.title {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+article#resume section p.date {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--alt);
+}
+
+article#resume section ul li {
+    font-size: 17px;
+    margin-bottom: 7px;
+    line-height: 1.92;
+    color: var(--alt);
+}
+
+article#resume section a, article#resume-header p.resume-sub-name a {
+    text-decoration: underline;
+    color: inherit;
+    opacity: 0.7;
+}
+
+article#resume section a:hover, article#resume-header p.resume-sub-name a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+article#resume section {
+    margin-bottom: 30px;
+}
+
+article#resume .skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+article#resume .skills ul li {
+    margin-top: 20px;
+    line-height: 1.5;
+    color: var(--alt);
+}
+
+article#resume .skills p {
+    display: none;
+}
+
+@media only screen and (max-width: 550px) {
+    article#resume .skills ul {
+        display: none;
+    }
+
+    article#resume .skills p {
+        display: block;
+        color: var(--alt);
+        line-height: 1.5;
+    }
+
+    hr {
+        margin: 1.3em 0;
+    }
+}
