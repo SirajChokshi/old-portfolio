@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
 
+import '../css/case.css';
+
 const styleTemp = {
-    backgroundColor: "#3d5afe",
-    backgroundImage: "url(\'images/test5.png\')",
-    backgroundPosition: "right",
-    backgroundSize: "contain",
-    backgroundRepeat: "no-repeat"
+    backgroundColor: "#4c2872",
+    backgroundImage: "url(\"/images/files.png\")",
 };
 
-export default class CaseStudy extends Component {
+export default class FileManager extends Component {
     state = {
 
     };
+
+    componentDidMount() {
+        document.title = "Siraj Chokshi - File Manager";
+        window.scrollTo(0, 0);
+    }
 
     render () {
         return (
@@ -58,8 +62,8 @@ export default class CaseStudy extends Component {
                     <h2><span>01.</span> Planning</h2>
                     <div className="row">
                         <div className="twelve columns">
-                            <img src="images/files_1.png" alt="" />
-                                <img src="images/files_2.png" alt="" />
+                            <img src="/images/files_1.png" alt="" />
+                                <img src="/images/files_2.png" alt="" />
                                     <p>
                                         Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
                                         in a piece of classical

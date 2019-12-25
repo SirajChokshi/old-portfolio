@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { animateScroll as scroll } from 'react-scroll';
+
 export default class Footer extends Component {
     state = {
 
@@ -10,7 +12,7 @@ export default class Footer extends Component {
             <footer>
                 <div className="row">
                     <div className="column one-half left-footer-sec">
-                        <a href="#top" id="back-to-top">&uarr; Back to top</a>
+                        <button onClick={scroll.scrollToTop} id="back-to-top">&uarr; Back to top</button>
                     </div>
                     <ul id="footer-socials" className="column one-half">
                         <li><a href="mailto:sirajsc2@illinois.edu"><i className="fas fa-paper-plane" />&nbsp;<span

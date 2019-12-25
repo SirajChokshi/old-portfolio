@@ -16,8 +16,8 @@ export default class Home extends Component {
         return (
             <main>
                 <p id="bio">
-                    Hi, I’m Siraj. I’m a <a href="work.html#ux" className="box-link">UX designer</a> and <a
-                    href="work.html#frontend" className="box-link">frontend developer</a>, studying Cognitive
+                    Hi, I’m Siraj. I’m a <Link to="/work" className="box-link">UX designer</Link> and <Link
+                    to="/work" className="box-link">frontend developer</Link>, studying Cognitive
                     Psychology, Computer Science
                     and Design at <a href="https://illinois.edu" className="box-link" target="_blank" rel='noreferrer noopener'>UIUC</a>.
                     {/*Check out my <Link to="/resume" className="box-link">resume</Link> or <Link to="/work" className="box-link">work</Link>.*/}
@@ -28,7 +28,7 @@ export default class Home extends Component {
                         <h2 id="positions-title">Lately</h2>
                         <ul id="positions">
                             <li>UI/UX Designer @ <a href="http://founders.illinois.edu" target="_blank" rel='noreferrer noopener' className="box-link">Founders</a></li>
-                            <li>Research Intern @ <a href="https://geneticsofdesign.com" target="_blank" rel='noreferrer noopener' rel='noreferrer noopener' className="box-link">GeneticsOfDesign.com</a></li>
+                            <li>Research Intern @ <a href="https://geneticsofdesign.com" target="_blank" rel='noreferrer noopener' className="box-link">GeneticsOfDesign.com</a></li>
                             <li>Digital Design Intern @ Koh for Congress</li>
                             <li>Designer @ <a href="http://mwcoc.com" target="_blank" rel='noreferrer noopener' className="box-link">MWCOC</a></li>
                         </ul>

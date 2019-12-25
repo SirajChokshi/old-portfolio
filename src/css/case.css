@@ -59,6 +59,7 @@ article.case img {
 @media only screen and (max-width: 885px) {
     section.project-header-card {
         display: none;
+        background-position: center;
     }
 
     section.project-header-card.mobile {

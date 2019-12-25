@@ -8,17 +8,16 @@ import Home from './views/Home';
 import Work from './views/Work';
 import About from './views/About';
 import Resume from './views/Resume';
-import CaseStudy from './views/CaseStudy';
+import FileManager from './views/FileManager';
 
 // Components
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import CatchError from "./views/CatchError";
+import StartupMatch from "./views/StartupMatch";
 
 function App() {
   return (
-      <>
-        <a id="top" />
       <div className="container" >
         <BrowserRouter>
           <Nav />
@@ -26,11 +25,14 @@ function App() {
             <Route exact={true} path='/' render={() => (
                 <Home />
             )}/>
-            <Route exact={true} path='/work' render={() => (
-                <Work />
+            <Route exact={true} path='/work' render={({ match }) => (
+                <Work filter={match.params.tag} />
             )}/>
-            <Route exact={true} path='/work/:wid' render={({ match }) => (
-                <CaseStudy workID={match.params.wid} />
+            <Route exact={true} path='/work/fileviewer' render={() => (
+                <FileManager />
+            )}/>
+            <Route exact={true} path='/work/startupmatch' render={() => (
+                <StartupMatch />
             )}/>
             <Route exact={true} path='/about' render={() => (
                 <About />
@@ -42,7 +44,7 @@ function App() {
           </Switch>
           <Footer />
         </BrowserRouter>
-      </div></>
+      </div>
   );
 }
 

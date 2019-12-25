@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 import { NavLink } from 'react-router-dom';
-// Icons
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faBookmark as bookmarkActive, faUser as userActive, faSearch as search, faCaretDown as darr, faFolderOpen as jobsActive, faCommentAlt as logoActive, faSignInAlt as login, faBars as menu, faCog as settings, faCogs as settingsActive, faSignOutAlt as signoutIcon } from '@fortawesome/free-solid-svg-icons'
-// import { faBookmark as bookmark, faUser as user, faFolderOpen as jobs, faCommentAlt as logo } from '@fortawesome/free-regular-svg-icons'
 
 class Nav extends Component {
     state = {
@@ -31,10 +27,10 @@ class Nav extends Component {
                 </div>
                 <div className={this.state.active ? "mobile-pullout show-on-mobile active" : "mobile-pullout show-on-mobile"} id="pullout">
                     <ul>
-                        <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
-                        <li><NavLink exact to="/work" activeClassName="active">Work</NavLink></li>
-                        <li><NavLink exact to="/about" activeClassName="active">About</NavLink></li>
-                        <li><NavLink exact to="/resume" activeClassName="active">Resume</NavLink></li>
+                        <li><NavLink exact to="/" activeClassName="active" onClick={this.toggle} >Home</NavLink></li>
+                        <li><NavLink exact to="/work" activeClassName="active" onClick={this.toggle}>Work</NavLink></li>
+                        <li><NavLink exact to="/about" activeClassName="active" onClick={this.toggle}>About</NavLink></li>
+                        <li><NavLink exact to="/resume" activeClassName="active" onClick={this.toggle}>Resume</NavLink></li>
                     </ul>
                 </div>
                 <nav className="row">
