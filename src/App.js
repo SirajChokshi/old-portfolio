@@ -9,6 +9,7 @@ import Work from './views/Work';
 import About from './views/About';
 import Resume from './views/Resume';
 import FileManager from './views/FileManager';
+import Finance from "./views/Finance";
 
 // Components
 import Nav from './components/Nav';
@@ -33,6 +34,9 @@ function App() {
             )}/>
             <Route exact={true} path='/work/startupmatch' render={() => (
                 <StartupMatch />
+            )}/>
+            <Route exact={true} path='/work/finance' render={() => (
+                <Finance />
             )}/>
             <Route exact={true} path='/about' render={() => (
                 <About />

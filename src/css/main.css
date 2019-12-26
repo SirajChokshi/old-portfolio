@@ -308,7 +308,7 @@ section.project-card#fileviewer a.button {
 }
 
 section.project-card#finance {
-    background-color: rgba(40, 40, 40, 0.958);
+    background-color: rgba(40, 40, 40, 0.95);
     background-image: url("/images/finance.png");
     background-position: right;
     background-size: contain;
