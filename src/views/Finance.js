@@ -85,10 +85,13 @@ export default class Finance extends Component {
                     <p>Once I had compiled all the wireframes I took to finding ways to export and use my work.
                         Figma's prototyping features were in their infancy and so I decided to take to Photoshop
                         to create some mockups of this project. The end result was an interface around three central
-                        pages of a "Wallet" for cards and memberships, a "Portfolio" for shares and a "Dashboard" to
+                        pages of a "Wallet" for cards and memberships, a "Portfolio" for shares and a "Overview" to
                         monitor transactions. The final design features a dark interface with white and pink gradient
                         highlights. details include a subtle logo mask behind a stock's price and tooltips for individual
                         values.</p>
+                    <div className="twelve columns">
+                        <img src="/images/3-finance-alt.png" alt="" />
+                    </div>
                 </article>
             </main>
         )

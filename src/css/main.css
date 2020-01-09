@@ -6,12 +6,10 @@
 }
 
 ::selection {
-    background-color: var(--primary-color); /* WebKit/Blink Browsers */
-    color: var(--tertiary-text-color);
+    background-color: rgba(103,86,255,.2); /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-    background-color: var(--primary-color); /* Gecko Browsers */
-    color: var(--tertiary-text-color);
+    background-color: rgba(103,86,255,.2); /* WebKit/Blink Browsers */
 }
 
 * {
@@ -121,6 +119,13 @@ nav h1 a {
     text-decoration: none;
 }
 
+nav h1 a img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 nav ul {
     text-align: right;
     list-style: none;
@@ -144,6 +149,10 @@ nav ul li a, nav ul li a:visited {
     -ms-transition: color 0.2s;
     -o-transition: color 0.2s;
     transition: color 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 nav ul li a.active {

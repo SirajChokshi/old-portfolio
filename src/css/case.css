@@ -2,7 +2,7 @@ article.case {
     width: 100%;
 }
 
-article.case p {
+article.case p, article.case li {
     font-size: 21px;
     line-height: 1.5;
 }
@@ -39,6 +39,42 @@ div.info.mobile {
 
 div.info.mobile h2 {
     margin-bottom: 0;
+}
+
+article.case h3 {
+    font-size: 22px;
+}
+
+article.case.locked, article.case.locked h2, article.case.locked h3 {
+    color: transparent;
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+}
+
+article.case.locked::after {
+    content: "🔒 Currently Unavailable";
+    color: #ffffff;
+    background-color: #3d5afe;
+    padding: 15px 30px;
+    border-radius: 8px;
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+    text-align: center;
+    display: block;
+    font-size: 22px;
+}
+
+article.case ul {
+    padding-left: 2em;
+}
+
+article.case li {
+    margin-bottom: 0.75em;
 }
 
 article.case img {

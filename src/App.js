@@ -20,8 +20,7 @@ import StartupMatch from "./views/StartupMatch";
 function App() {
   return (
       <div className="container" >
-        <BrowserRouter>
-          {/* basename={process.env.PUBLIC_URL} */}
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Nav />
           <Switch>
             <Route exact={true} path='/' render={() => (

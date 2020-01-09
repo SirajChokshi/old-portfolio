@@ -59,24 +59,24 @@ export default class FileManager extends Component {
                 </article>
 
                 <article className="case">
-                    <h2><span>01.</span> Planning</h2>
+                    <h2><span>01.</span> Final Design</h2>
                     <div className="row">
                         <div className="twelve columns">
                             <img src="/images/files_1.png" alt="" />
-                                <img src="/images/files_2.png" alt="" />
-                                    <p>
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of classical
-                                        Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
-                                        a Latin professor at
-                                        Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
-                                        words, consectetur, from
-                                        a Lorem Ipsum passage, and going through the cites of the word in classical
-                                        literature, discovered
-                                        the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
-                                        "de Finibus Bonorum et
-                                        Malorum"
-                                    </p>
+                        </div>
+                    </div>
+                    <h2><span>02.</span> Features</h2>
+                    <div className="row">
+
+                           <ul className="columns eight">
+                               <li>Storage selector allowing for users to immediately sort through their data at the highest level</li>
+                               <li>Brief overview of the complete system based on user input</li>
+                               <li>Filterable, live display that dynamically adapts to user queries such as file name or media type</li>
+                               <li>Menu to access further tools and configurations within the applications</li>
+                               <li>Search feature allowing for quick parsing of various types of data on a users device</li>
+                           </ul>
+                        <div className="columns four">
+                            <img src="/images/files_4.png" style={{margin: "0", marginTop: "15px"}} alt="" />
                         </div>
                     </div>
                 </article>

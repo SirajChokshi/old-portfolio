@@ -22,8 +22,8 @@ export default class About extends Component {
                     <img src="http://via.placeholder.com/400x520" alt="headshot" className="columns four" style={{margin: "0 auto"}} />
                         <div className="columns eight" id="about-page-bio">
                             <p>
-                                <strong>Hi, I'm Siraj.</strong><br /> I am a user experience designer with foundations
-                                in user research, visual design and frontend development. I am enrolled at the University
+                                <strong>Hi, I'm Siraj.</strong><br /> I am a user experience designer and frontend developer with foundations
+                                in application development, user research and visual design. I am enrolled at the University
                                 of Illinois at Urbana-Champaign where I am pursuing a bachelors degree in Cognitive Science
                                 and minoring in Art + Design. My coursework is centered around human factors, ergonomics,
                                 programming and design. I am currently designing and developing solutions for the UIUC
