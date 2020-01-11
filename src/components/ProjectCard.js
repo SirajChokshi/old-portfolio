@@ -10,7 +10,7 @@ export default class ProjectCard extends Component {
     render () {
         return (
             <section id={this.props.projectID} className="project-card">
-                <Link to={"/work/" + this.props.projectID} className="cover-link" />
+                <Link to={"/work/" + this.props.projectID} className="cover-link" aria-label={this.props.projectName} />
                 <div className="info">
                     <h2>{this.props.projectName}</h2>
                     <h3>{this.props.projectYear} &middot; {this.props.projectCategory}</h3>

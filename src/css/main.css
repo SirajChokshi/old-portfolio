@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, "Lucida Grande", "Segoe UI", Ubuntu, "Fira Sans", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: var(--text-color);
     position: relative;
     overflow-x: hidden;
@@ -40,7 +40,7 @@ a, a:visited {
 }
 
 a.box-link, a.box-link:visited {
-    padding: 0 2px 2px;
+    padding: 0 2px;
     color: var(--text-color);
     text-decoration: none;
     -webkit-transition: color 0.15s;

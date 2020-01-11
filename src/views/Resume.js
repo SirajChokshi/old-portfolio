@@ -43,15 +43,15 @@ export default class Resume extends Component {
                         <div className="columns nine">
                             <h3>Experience</h3>
                             <section>
-                                <p className="title"><strong>Illinois Founders,</strong> Champaign &mdash; <em>UI/UX
-                                    Designer</em></p>
+                                <p className="title"><strong>Illinois Founders,</strong> Champaign &mdash; <em>Frontend Developer</em></p>
                                 <p className="date">September 2019 - Present</p>
                                 <ul>
                                     <li>Designing user interfaces and experiences for software to promote accessibility
                                         at UIUC for startups and student entrepreneurs
                                     </li>
-                                    <li>Working on multiple project teams and communicating with teams of software
-                                        engineers
+                                    <li>Developing a Startup Job Board using React.JS, Redux and Thunk
+                                        middleware while working with RESTful APIs to create a functional web
+                                        application.
                                     </li>
                                 </ul>
                             </section>
@@ -86,10 +86,10 @@ export default class Resume extends Component {
                             <h3>Education</h3>
                             <section>
                                 <p className="title"><strong>University of Illinois at Urbana-Champaign</strong> &mdash;
-                                    <em>B.Sc</em></p>
-                                <p className="date">August 2019 - December 2022</p>
+                                    <em> B.Sc</em></p>
+                                <p className="date">August 2019 - December 2022 &mdash; GPA 3.81 / 4.00</p>
                                 <ul>
-                                    <li>Freshman majoring in Cognitive Science and minoring in Design</li>
+                                    <li>Majoring in Cognitive Science (BS) and minoring in Design</li>
                                     <li>Working towards an interdisciplinary education in Human-Computer Interaction through psychology, computer science and art coursework</li>
                                     <li>Relevant Coursework:&nbsp;
                                          <a href="https://ise.illinois.edu/courses/profile/IE340" target="_blank" rel='noreferrer noopener'>Human Factors Engineering</a>,&nbsp;
@@ -132,11 +132,11 @@ export default class Resume extends Component {
                             <h4>Development</h4>
                             <ul>
                                 <li>HTML, CSS, JavaScript</li>
-                                <li>React.JS, jQuery</li>
+                                <li>React.JS, Redux, jQuery</li>
                                 <li>PHP, SQL</li>
-                                <li>Java, C#</li>
+                                <li>Java, C#, Python</li>
                             </ul>
-                            <p>HTML, CSS, JavaScript, React.JS, jQuery, PHP, SQL, Java, C#</p>
+                            <p>HTML, CSS, JavaScript, React.JS, Redux, jQuery, PHP, SQL, Java, C#, Python</p>
                             <h4>Other</h4>
                             <ul>
                                 <li>Windows, macOS, GNU/Linux, Git, XCode, Visual Studio</li>

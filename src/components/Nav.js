@@ -15,8 +15,8 @@ class Nav extends Component {
         return (
             <>
                 <div className="mobile-menu show-on-mobile">
-                    <h1><NavLink exact to="/"><img src="https://i.imgur.com/trdF8yX.jpg" className="header-profile" alt="" /> Siraj Chokshi</NavLink></h1>
-                    <button className={this.state.active ? "gh-svg-wrapper active" : "gh-svg-wrapper"} onClick={this.toggle} >
+                    <h1><NavLink exact to="/"><img src="/images/profile.jpg" className="header-profile" alt="" /> Siraj Chokshi</NavLink></h1>
+                    <button className={this.state.active ? "gh-svg-wrapper active" : "gh-svg-wrapper"} onClick={this.toggle} aria-label="Menu" >
                         <svg x="0px" y="0px" width="100%" viewBox="0 0 96 96" className="gh-svg gh-svg-top" enableBackground="new 0 0 96 96">
                             <rect width="32" height="4" x="32" y="46" className="gh-svg-rect gh-svg-rect-top" />
                         </svg>
@@ -35,7 +35,7 @@ class Nav extends Component {
                 </div>
                 <nav className="row">
                     <div className="columns six hide-on-mobile">
-                        <h1><NavLink exact to="/"><img src="https://i.imgur.com/trdF8yX.jpg" className="header-profile" alt="" /> Siraj Chokshi</NavLink></h1>
+                        <h1><NavLink exact to="/"><img src="/images/profile.jpg" className="header-profile" alt="" /> Siraj Chokshi</NavLink></h1>
                     </div>
                     <div className="columns six hide-on-mobile">
                         <ul>

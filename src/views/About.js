@@ -19,8 +19,8 @@ export default class About extends Component {
             <main>
                 <h2 id="work-header">About</h2>
                 <article className="case row">
-                    <img src="http://via.placeholder.com/400x520" alt="headshot" className="columns four" style={{margin: "0 auto"}} />
-                        <div className="columns eight" id="about-page-bio">
+                    {/*<img src="http://via.placeholder.com/400x520" alt="headshot" className="columns four" style={{margin: "0 auto"}} />*/}
+                        <div className="columns twelve" id="about-page-bio">
                             <p>
                                 <strong>Hi, I'm Siraj.</strong><br /> I am a user experience designer and frontend developer with foundations
                                 in application development, user research and visual design. I am enrolled at the University
