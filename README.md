@@ -1,6 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 👷 Project Info
 
-## Available Scripts
+Portfolio developed by [Siraj Chokshi](https://sirajchokshi.com) in 2020. Developed with React.JS and hosted with Zeit's [now.sh](https://now.sh).
+
+## 👇 React Stuff Below Here
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
@@ -66,3 +70,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+<hr>
+
+
+Copyright 2020 Siraj Chokshi

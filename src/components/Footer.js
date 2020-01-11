@@ -25,7 +25,7 @@ export default class Footer extends Component {
                         <li><a href="https://twitter.com/sirajchokshi" aria-label="Twitter" ><i className="fab fa-twitter" />&nbsp;</a></li>
                     </ul>
                 </div>
-                <p id="copy">&copy; Copyright 2019 Siraj Chokshi.<br className="show-on-mobile" /> <a href="https://archive.sirajchokshi.com">View Archive</a></p>
+                <p id="copy">&copy; Copyright 2020 Siraj Chokshi.<br className="show-on-mobile" /> <a href="https://archive.sirajchokshi.com">View Archive</a></p>
             </footer>
         )
     }
