@@ -62,7 +62,7 @@ export default class FileManager extends Component {
                     <h2><span>01.</span> Final Design</h2>
                     <div className="row">
                         <div className="twelve columns">
-                            <img src="/images/files_1.png" alt="" />
+                            <img loading="lazy" src="/images/files_1.png" alt="File Manager Final Design" />
                         </div>
                     </div>
                     <h2><span>02.</span> Features</h2>
@@ -76,7 +76,7 @@ export default class FileManager extends Component {
                                <li>Search feature allowing for quick parsing of various types of data on a users device</li>
                            </ul>
                         <div className="columns four">
-                            <img src="/images/files_4.png" style={{margin: "0", marginTop: "15px"}} alt="" />
+                            <img loading="lazy" src="/images/files_4.png" style={{margin: "0", marginTop: "15px"}} alt="File Manager Mockup" />
                         </div>
                     </div>
                 </article>

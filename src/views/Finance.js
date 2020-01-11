@@ -68,7 +68,7 @@ export default class Finance extends Component {
                                 my wireframes.
                             </p>
                     <div className="twelve columns">
-                        <img src="/images/1-finance.png" alt="" />
+                        <img loading="lazy" src="/images/1-finance.png" alt="Finance App Information Architecture" />
                     </div>
                     <h2><span>02.</span> Wireframing</h2>
                     <p>This information hierarchy was then used to design the interactions between the frames and
@@ -79,7 +79,7 @@ export default class Finance extends Component {
                         ideas in order to utilize open source fonts instead.
                     </p>
                     <div className="twelve columns">
-                        <img src="/images/2-finance.png" alt="" />
+                        <img loading="lazy" src="/images/2-finance.png" alt="Finance App Wireframes" />
                     </div>
                     <h2><span>03.</span> Design</h2>
                     <p>Once I had compiled all the wireframes I took to finding ways to export and use my work.
@@ -90,7 +90,7 @@ export default class Finance extends Component {
                         highlights. details include a subtle logo mask behind a stock's price and tooltips for individual
                         values.</p>
                     <div className="twelve columns">
-                        <img src="/images/3-finance-alt.png" alt="" />
+                        <img loading="lazy" src="/images/3-finance-alt.png" alt="Finance App Final Design" />
                     </div>
                 </article>
             </main>
