@@ -43,7 +43,7 @@ export default class Resume extends Component {
                         <div className="columns nine">
                             <h3>Experience</h3>
                             <section>
-                                <p className="title"><strong>Illinois Founders,</strong> Champaign &mdash; <em>Frontend Developer</em></p>
+                                <p className="title"><strong>Illinois Founders,</strong> Champaign &mdash; <em>UX/UX & Frontend Developer</em></p>
                                 <p className="date">September 2019 - Present</p>
                                 <ul>
                                     <li>Designing user interfaces and experiences for software to promote accessibility
