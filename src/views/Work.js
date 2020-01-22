@@ -41,6 +41,13 @@ export default class Work extends Component {
                         projectDesc="A concept for a financial app design combining a transaction management system, stock
                                      portfolio and card database."
                     />
+                    <ProjectCard
+                        projectID="music"
+                        projectName="Music Streaming UI"
+                        projectYear="2017"
+                        projectCategory={"UI/UX Design"}
+                        projectDesc="A user interface design for a music streaming service."
+                    />
                 </article>
             </>
         )

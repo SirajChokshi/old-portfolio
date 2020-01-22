@@ -10,6 +10,7 @@ import About from './views/About';
 import Resume from './views/Resume';
 import FileManager from './views/FileManager';
 import Finance from "./views/Finance";
+import Music from "./views/Music"
 
 // Components
 import Nav from './components/Nav';
@@ -37,6 +38,9 @@ function App() {
             )}/>
             <Route exact={true} path='/work/finance' render={() => (
                 <Finance />
+            )}/>
+            <Route exact={true} path='/work/music' render={() => (
+                <Music />
             )}/>
             <Route exact={true} path='/about' render={() => (
                 <About />

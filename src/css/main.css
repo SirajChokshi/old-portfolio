@@ -329,6 +329,19 @@ section.project-card#finance a.button {
     background-color: #FFFFFF;
 }
 
+section.project-card#music {
+    background-color: #44C1BB;
+    background-image: url("/images/music.png");
+    background-position: bottom right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section.project-card#music a.button {
+    color: #44C1BB;
+    background-color: #FFFFFF;
+}
+
 @media only screen and (max-width: 925px) {
 
     #startupmatch .info {
@@ -341,6 +354,10 @@ section.project-card#finance a.button {
 
     #finance .info {
         background-color: rgba(40, 40, 40, 0.9);
+    }
+
+    #music .info {
+        background-color: rgba(64, 184, 178, 0.90);
     }
 }
 
