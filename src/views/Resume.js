@@ -43,7 +43,15 @@ export default class Resume extends Component {
                         <div className="columns nine">
                             <h3>Experience</h3>
                             <section>
-                                <p className="title"><strong>Illinois Founders,</strong> Champaign &mdash; <em>UI/UX & Frontend Developer</em></p>
+                                <p className="title"><strong>Hack4Impact,</strong> Champaign IL &mdash; <em>Product Designer</em></p>
+                                <p className="date">January 2020 - Present</p>
+                                <ul>
+                                    <li>Designing and developing user experiences through mobile applications and software
+                                    for non-profit organizations</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <p className="title"><strong>Illinois Founders,</strong> Champaign IL &mdash; <em>UI/UX & Frontend Developer</em></p>
                                 <p className="date">September 2019 - Present</p>
                                 <ul>
                                     <li>Designing user interfaces and experiences for software to promote accessibility
@@ -56,7 +64,7 @@ export default class Resume extends Component {
                                 </ul>
                             </section>
                             <section>
-                                <p className="title"><strong>The Genetics of Design,</strong> Concord &mdash; <em>Cognitive
+                                <p className="title"><strong>The Genetics of Design,</strong> Concord MA &mdash; <em>Cognitive
                                     Research Intern</em></p>
                                 <p className="date">June 2018 - December 2018</p>
                                 <ul>
@@ -68,19 +76,11 @@ export default class Resume extends Component {
                                 </ul>
                             </section>
                             <section>
-                                <p className="title"><strong>Dan Koh for Congress,</strong> Andover &mdash; <em>Digital Campaign Intern</em></p>
+                                <p className="title"><strong>Dan Koh for Congress,</strong> Andover MA &mdash; <em>Digital Campaign Intern</em></p>
                                 <p className="date">February 2018 - September 2018</p>
                                 <ul>
                                     <li>Communicated policy by designing marketing materials and media</li>
                                     <li>Managed and updated the campaign website, databases, and webmail for the campaign website using PHP, Python, XML and CSS</li>
-                                </ul>
-                            </section>
-                            <section>
-                                <p className="title"><strong>Middlesex West Chamber of Commerce,</strong> Acton &mdash; <em>Social Media & Graphic Designer</em></p>
-                                <p className="date">March 2017 - September 2017</p>
-                                <ul>
-                                    <li>Managed social media and email forms using Constant Contact, Facebook, G Suite and other platforms</li>
-                                    <li>Created marketing materials, brochures, posters and advertisements</li>
                                 </ul>
                             </section>
                             <h3>Education</h3>

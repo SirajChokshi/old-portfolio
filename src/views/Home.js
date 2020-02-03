@@ -27,10 +27,10 @@ export default class Home extends Component {
                     <section className="one-half column">
                         <h2 id="positions-title">Lately</h2>
                         <ul id="positions">
+                            <li>Product Designer @ <a href="https://uiuc.hack4impact.org" target="_blank" rel='noreferrer noopener' className="box-link">Hack4Impact</a></li>
                             <li>UI/UX Designer @ <a href="http://founders.illinois.edu" target="_blank" rel='noreferrer noopener' className="box-link">Founders</a></li>
                             <li>Research Intern @ <a href="https://geneticsofdesign.com" target="_blank" rel='noreferrer noopener' className="box-link">GeneticsOfDesign.com</a></li>
                             <li>Digital Design Intern @ Koh for Congress</li>
-                            <li>Designer @ <a href="http://mwcoc.com" target="_blank" rel='noreferrer noopener' className="box-link">MWCOC</a></li>
                         </ul>
                     </section>
                     <section className="one-half column">
