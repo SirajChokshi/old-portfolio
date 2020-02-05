@@ -36,7 +36,7 @@ export default class IlliniTours extends Component {
                         <h3>Scope</h3>
                         <ul>
                             <li style={{width: "90%"}}>Design an application to introduce new students and prospective
-                                students the University of Illinois campus.
+                                students to the University of Illinois campus.
                             </li>
                         </ul>
                     </section>
