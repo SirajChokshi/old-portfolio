@@ -13,7 +13,7 @@ export default class IlliniTours extends Component {
     };
 
     componentDidMount() {
-        document.title = "Siraj Chokshi - Finance UX";
+        document.title = "Siraj Chokshi - Illini Tours";
         window.scrollTo(0, 0);
     }
 
