@@ -17,6 +17,7 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import CatchError from "./views/CatchError";
 import StartupMatch from "./views/StartupMatch";
+import IlliniTours from "./views/IlliniTours";
 
 function App() {
   return (
@@ -38,6 +39,9 @@ function App() {
             )}/>
             <Route exact={true} path='/work/finance' render={() => (
                 <Finance />
+            )}/>
+            <Route exact={true} path='/work/illinitours' render={() => (
+                <IlliniTours />
             )}/>
             <Route exact={true} path='/work/music' render={() => (
                 <Music />

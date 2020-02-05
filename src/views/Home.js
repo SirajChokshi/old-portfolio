@@ -46,6 +46,13 @@ export default class Home extends Component {
                 <h2 id="work-header">Select Works</h2>
                 <article>
                     <ProjectCard
+                        projectID="illinitours"
+                        projectName="Illini Tours"
+                        projectYear="2020"
+                        projectCategory={"UI/UX Design"}
+                        projectDesc="An application built to introduce new and prospective students to the UIUC campus."
+                    />
+                    <ProjectCard
                         projectID="startupmatch"
                         projectName="StartupMatch"
                         projectYear="2019"
@@ -61,14 +68,6 @@ export default class Home extends Component {
                         projectCategory={"UI/UX Design"}
                         projectDesc="Detail-orientated and user-focused splash screen for an iOS file viewer with
                                     light and dark theme versions."
-                    />
-                    <ProjectCard
-                        projectID="finance"
-                        projectName="Finance UX"
-                        projectYear="2018"
-                        projectCategory={"UI/UX Design"}
-                        projectDesc="A concept for a financial app design combining a transaction management system, stock
-                                     portfolio and card database."
                     />
 
                     <Link to="/work" id="view-more">View All</Link>

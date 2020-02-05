@@ -17,6 +17,13 @@ export default class Work extends Component {
                 <h2 id="work-header">Select Works</h2>
                 <article>
                     <ProjectCard
+                        projectID="illinitours"
+                        projectName="Illini Tours"
+                        projectYear="2020"
+                        projectCategory={"UI/UX Design"}
+                        projectDesc="An application built to introduce new and prospective students to the UIUC campus."
+                    />
+                    <ProjectCard
                         projectID="startupmatch"
                         projectName="StartupMatch"
                         projectYear="2019"

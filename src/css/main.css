@@ -342,6 +342,19 @@ section.project-card#music a.button {
     background-color: #FFFFFF;
 }
 
+section.project-card#illinitours {
+    background-color: #F05519;
+    background-image: url("/images/it-1.png");
+    background-position: bottom right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section.project-card#illinitours a.button {
+    color: #F05519;
+    background-color: #FFFFFF;
+}
+
 @media only screen and (max-width: 925px) {
 
     #startupmatch .info {
@@ -359,6 +372,11 @@ section.project-card#music a.button {
     #music .info {
         background-color: rgba(64, 184, 178, 0.90);
     }
+
+    #illinitours .info {
+        background-color: rgba(240, 85, 25, 0.89);
+    }
+
 }
 
 section.project-header-card {
