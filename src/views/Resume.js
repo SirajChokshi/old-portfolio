@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Document, Page } from 'react-pdf/dist/entry.webpack';
-
+import { Document, Page, pdfjs } from 'react-pdf/dist/entry.webpack';
 import '../css/case.css';
 import '../css/resume.css';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default class Resume extends Component {
     state = {
@@ -26,7 +26,7 @@ export default class Resume extends Component {
 
     render () {
         return (
-            <main onResize={this.resizePDF}>
+            <main>
                 <h2 id="work-header">Resume</h2>
 
                 <p>
