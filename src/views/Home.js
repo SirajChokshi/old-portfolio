@@ -16,11 +16,9 @@ export default class Home extends Component {
         return (
             <main>
                 <p id="bio">
-                    Hi, I’m Siraj. I’m a <Link to="/work" className="box-link">UX designer</Link> and <a
-                    href="https://sirajchokshi.github.io" className="box-link" target="_blank" rel="noreferrer noopener">frontend developer</a>, studying Cognitive
-                    Psychology, Computer Science,
+                    Hi, I’m Siraj. I’m a <a href="https://sirajchokshi.github.io" className="box-link" target="_blank" rel="noreferrer noopener">software engineer</a> and <Link to="/work" className="box-link">UX designer</Link>, studying Cognitive
+                    Neuroscience, Computer Science,
                     and Design at <a href="https://illinois.edu" className="box-link" target="_blank" rel='noreferrer noopener'>UIUC</a>.
-                    {/*Check out my <Link to="/resume" className="box-link">resume</Link> or <Link to="/work" className="box-link">work</Link>.*/}
                 </p>
 
                 <article className="row" id="sub-header">

@@ -22,7 +22,8 @@ export default class Resume extends Component {
                 </p>
 
                 <hr id="view-resume" />
-
+                <embed src="/files/resume.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="1100px" />
+{/* 
                     <article id="resume-header" className="row">
                         <div className="columns nine">
                             <p className="resume-name">Siraj Chokshi</p>
@@ -143,7 +144,7 @@ export default class Resume extends Component {
                             </ul>
                             <p>Windows, macOS, GNU/Linux, Git, XCode, Visual Studio</p>
                         </div>
-                    </article>
+                    </article> */}
             </main>
         )
     }
