@@ -27,7 +27,7 @@ export default class Home extends Component {
                         <ul id="positions">
                             <li>Software Engineering Intern @ <a href="https://abbvie.com" target="_blank" rel='noreferrer noopener' className="box-link">AbbVie</a></li>
                             <li>Product Designer @ <a href="https://uiuc.hack4impact.org" target="_blank" rel='noreferrer noopener' className="box-link">Hack4Impact</a></li>
-                            <li>UI/UX Designer @ <a href="http://founders.illinois.edu" target="_blank" rel='noreferrer noopener' className="box-link">Founders</a></li>
+                            <li>Software Developer @ <a href="http://founders.illinois.edu" target="_blank" rel='noreferrer noopener' className="box-link">Founders</a></li>
                             <li>Research Intern @ <a href="https://geneticsofdesign.com" target="_blank" rel='noreferrer noopener' className="box-link">GeneticsOfDesign.com</a></li>
                         </ul>
                     </section>
