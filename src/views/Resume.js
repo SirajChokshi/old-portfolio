@@ -1,20 +1,32 @@
 import React, { Component } from 'react';
+import { Document, Page } from 'react-pdf/dist/entry.webpack';
 
 import '../css/case.css';
 import '../css/resume.css';
 
 export default class Resume extends Component {
     state = {
-
+        containerWidth: 300
     };
 
     componentDidMount() {
         document.title = "Siraj Chokshi - Resume";
+        this.resizePDF();
+        window.addEventListener('resize', this.resizePDF);
+    }
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.resizePDF);
+    }
+
+    resizePDF = () => {
+        this.setState({
+            containerWidth: document.getElementsByClassName("container").item(0).offsetWidth
+        })
     }
 
     render () {
         return (
-            <main>
+            <main onResize={this.resizePDF}>
                 <h2 id="work-header">Resume</h2>
 
                 <p>
@@ -22,7 +34,12 @@ export default class Resume extends Component {
                 </p>
 
                 <hr id="view-resume" />
-                <embed src="/files/resume.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="1100px" />
+
+                <Document file="/files/resume.pdf" error="" loading="">
+                    <Page pageNumber={1} width={this.state.containerWidth} />
+                </Document>
+
+                {/* <embed src="/files/resume.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="1100px" /> */}
 {/* 
                     <article id="resume-header" className="row">
                         <div className="columns nine">

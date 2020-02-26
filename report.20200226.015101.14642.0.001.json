@@ -4,10 +4,10 @@
     "reportVersion": 1,
     "event": "Allocation failed - JavaScript heap out of memory",
     "trigger": "FatalError",
-    "filename": "report.20200226.011740.12568.0.001.json",
-    "dumpEventTime": "2020-02-26T01:17:40Z",
-    "dumpEventTimeStamp": "1582701460979",
-    "processId": 12568,
+    "filename": "report.20200226.015101.14642.0.001.json",
+    "dumpEventTime": "2020-02-26T01:51:01Z",
+    "dumpEventTimeStamp": "1582703461016",
+    "processId": 14642,
     "cwd": "/Users/siraj/Documents/Websites/portfolio",
     "commandLine": [
       "/usr/local/Cellar/node/13.6.0/bin/node",
@@ -47,37 +47,37 @@
       {
         "model": "Intel(R) Core(TM) i5-7360U CPU @ 2.30GHz",
         "speed": 2300,
-        "user": 42883650,
+        "user": 43744970,
         "nice": 0,
-        "sys": 31333840,
-        "idle": 288933660,
+        "sys": 31682940,
+        "idle": 289723240,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i5-7360U CPU @ 2.30GHz",
         "speed": 2300,
-        "user": 16795060,
+        "user": 17077400,
         "nice": 0,
-        "sys": 10456220,
-        "idle": 335840930,
+        "sys": 10602040,
+        "idle": 337412770,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i5-7360U CPU @ 2.30GHz",
         "speed": 2300,
-        "user": 43518030,
+        "user": 44406340,
         "nice": 0,
-        "sys": 23411950,
-        "idle": 296162440,
+        "sys": 23716230,
+        "idle": 296969860,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i5-7360U CPU @ 2.30GHz",
         "speed": 2300,
-        "user": 14424420,
+        "user": 14686650,
         "nice": 0,
-        "sys": 8163160,
-        "idle": 340504540,
+        "sys": 8295960,
+        "idle": 342109510,
         "irq": 0
       }
     ],
@@ -216,10 +216,10 @@
     }
   ],
   "javascriptHeap": {
-    "totalMemory": 2151673856,
-    "totalCommittedMemory": 2149909024,
-    "usedMemory": 2140677200,
-    "availableMemory": 48124384,
+    "totalMemory": 2151342080,
+    "totalCommittedMemory": 2149644624,
+    "usedMemory": 2140630984,
+    "availableMemory": 48336144,
     "memoryLimit": 2197815296,
     "heapSpaces": {
       "read_only_space": {
@@ -231,37 +231,37 @@
       },
       "new_space": {
         "memorySize": 2097152,
-        "committedMemory": 1113176,
+        "committedMemory": 1221248,
         "capacity": 1047424,
-        "used": 111904,
-        "available": 935520
+        "used": 231920,
+        "available": 815504
       },
       "old_space": {
-        "memorySize": 2103844864,
-        "committedMemory": 2103546888,
-        "capacity": 2096119848,
-        "used": 2096119848,
+        "memorySize": 2093621248,
+        "committedMemory": 2093392640,
+        "capacity": 2086376880,
+        "used": 2086376880,
         "available": 0
       },
       "code_space": {
         "memorySize": 1740800,
-        "committedMemory": 1486976,
-        "capacity": 1424448,
-        "used": 1424448,
+        "committedMemory": 1469888,
+        "capacity": 1347008,
+        "used": 1347008,
         "available": 0
       },
       "map_space": {
-        "memorySize": 3149824,
-        "committedMemory": 3149584,
-        "capacity": 2628000,
-        "used": 2628000,
+        "memorySize": 3411968,
+        "committedMemory": 3318752,
+        "capacity": 2665360,
+        "used": 2665360,
         "available": 0
       },
       "large_object_space": {
-        "memorySize": 39956480,
-        "committedMemory": 39956480,
-        "capacity": 39815416,
-        "used": 39815416,
+        "memorySize": 49586176,
+        "committedMemory": 49586176,
+        "capacity": 49432232,
+        "used": 49432232,
         "available": 0
       },
       "code_large_object_space": {
@@ -281,13 +281,13 @@
     }
   },
   "resourceUsage": {
-    "userCpuSeconds": 107.616,
-    "kernelCpuSeconds": 5.14059,
-    "cpuConsumptionPercent": 99.7843,
-    "maxRss": 2272272580608,
+    "userCpuSeconds": 101.388,
+    "kernelCpuSeconds": 5.27866,
+    "cpuConsumptionPercent": 125.49,
+    "maxRss": 2249782722560,
     "pageFaults": {
-      "IORequired": 6,
-      "IONotRequired": 1134363
+      "IORequired": 1,
+      "IONotRequired": 1087828
     },
     "fsActivity": {
       "reads": 0,
@@ -320,6 +320,7 @@
     "npm_package_scripts_deploy": "gh-pages -d build",
     "npm_package_browserslist_development_1": "last 1 firefox version",
     "npm_package_browserslist_development_0": "last 1 chrome version",
+    "npm_package_devDependencies__babel_core": "^7.7.7",
     "npm_package_eslintConfig_extends": "react-app",
     "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.8oKgt1FG4S/Listeners",
     "npm_package_browserslist_development_2": "last 1 safari version",
@@ -329,7 +330,7 @@
     "PAGER": "less",
     "LSCOLORS": "Gxfxcxdxbxegedabagacad",
     "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"start\"],\"original\":[\"start\"]}",
-    "PATH": "/var/folders/rk/qbvzb61924d43pjcd85bhw8w0000gn/T/yarn--1582701347027-0.5641349046330433:/Users/siraj/Documents/Websites/portfolio/node_modules/.bin:/Users/siraj/.config/yarn/link/node_modules/.bin:/usr/local/Cellar/node/13.6.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node/13.6.0/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node/13.6.0/bin/node_modules/npm/bin/node-gyp-bin:/Users/siraj/Y/google-cloud-sdk/bin:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+    "PATH": "/var/folders/rk/qbvzb61924d43pjcd85bhw8w0000gn/T/yarn--1582703375328-0.9369059945358889:/Users/siraj/Documents/Websites/portfolio/node_modules/.bin:/Users/siraj/.config/yarn/link/node_modules/.bin:/usr/local/Cellar/node/13.6.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node/13.6.0/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node/13.6.0/bin/node_modules/npm/bin/node-gyp-bin:/Users/siraj/Y/google-cloud-sdk/bin:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
     "_": "/Users/siraj/Documents/Websites/portfolio/node_modules/.bin/react-scripts",
     "npm_package_browserslist_production_1": "not dead",
     "npm_package_browserslist_production_0": ">0.2%",
@@ -615,6 +616,6 @@
     "/System/Library/PrivateFrameworks/AppleSauce.framework/Versions/A/AppleSauce",
     "/System/Library/PrivateFrameworks/AssertionServices.framework/Versions/A/AssertionServices",
     "/System/Library/PrivateFrameworks/BaseBoard.framework/Versions/A/BaseBoard",
-    "/Users/siraj/Documents/Websites/portfolio/node_modules/fsevents/build/Release/fse.node"
+    "/Users/siraj/Documents/Websites/portfolio/node_modules/fsevents/lib/binding/Release/node-v79-darwin-x64/fse.node"
   ]
 }
