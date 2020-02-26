@@ -23,12 +23,12 @@ export default class IlliniTours extends Component {
                 <section className="project-header-card mobile" style={styleTemp} />
                 <div className="info mobile">
                     <h2>Illini Tours App</h2>
-                    <h3>2020 &middot; UI/UX Design</h3>
+                    <h3>2020 &middot; Development & UI/UX</h3>
                 </div>
                 <section className="project-header-card" style={styleTemp}>
                     <div className="info">
                         <h2>Illini Tours App</h2>
-                        <h3>2020 &middot; UI/UX Design</h3>
+                        <h3>2020 &middot; Development & UI/UX</h3>
                     </div>
                 </section>
                 <article className="row" id="sub-header">

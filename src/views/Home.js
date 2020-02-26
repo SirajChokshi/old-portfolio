@@ -47,14 +47,14 @@ export default class Home extends Component {
                         projectID="illinitours"
                         projectName="Illini Tours"
                         projectYear="2020"
-                        projectCategory={"UI/UX Design"}
+                        projectCategory={"Development & UI/UX"}
                         projectDesc="An application built to introduce new and prospective students to the UIUC campus."
                     />
                     <ProjectCard
                         projectID="startupmatch"
                         projectName="StartupMatch"
                         projectYear="2019"
-                        projectCategory={"Design & Frontend Dev"}
+                        projectCategory={"Frontend Dev & UI/UX"}
                         projectDesc="A case study on the user research, interaction design and frontend development
                                     processes of creating a job board for startups developed by Founders at the University of
                                     Illinois at Urbana-Champaign."

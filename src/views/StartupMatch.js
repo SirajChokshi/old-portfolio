@@ -23,12 +23,12 @@ export default class StartupMatch extends Component {
                 <section className="project-header-card mobile" style={styleTemp} />
                 <div className="info mobile">
                     <h2>StartupMatch</h2>
-                    <h3>2019 &middot; Design & Frontend Dev</h3>
+                    <h3>2019 &middot; Frontend Dev & UI/UX</h3>
                 </div>
                 <section className="project-header-card" style={styleTemp}>
                     <div className="info">
                         <h2>StartupMatch</h2>
-                        <h3>2019 &middot; Design & Frontend Dev</h3>
+                        <h3>2019 &middot; Frontend Dev & UI/UX</h3>
                     </div>
                 </section>
                 <article className="row" id="sub-header">
