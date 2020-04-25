@@ -9,7 +9,9 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ArticleCard from "../components/ArticleCard";
 
-const IndexPage = ({data: {allMarkdownRemark: { edges },},}) => {
+// temp input for IndexPage: {data: {allMarkdownRemark: { edges },},}
+
+const IndexPage = () => {
     // const Posts = edges
     //     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     //     .slice(0,3)
@@ -108,24 +110,24 @@ const IndexPage = ({data: {allMarkdownRemark: { edges },},}) => {
     )
 }
 
-export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
-            title
-            abstract
-            tags
-          }
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query {
+//     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+//       edges {
+//         node {
+//           id
+//           excerpt(pruneLength: 250)
+//           frontmatter {
+//             date(formatString: "MMMM DD, YYYY")
+//             path
+//             title
+//             abstract
+//             tags
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 
 export default IndexPage
