@@ -1,25 +1,36 @@
-import React, { Component } from 'react';
+import { Link } from "gatsby"
+import PropTypes from "prop-types"
+import React from "react"
 
-import { Link } from 'react-router-dom';
 
-export default class ProjectCard extends Component {
-    state = {
+const ProjectCard = ({projectID, projectName, projectYear, projectCategory, projectDesc}) => (
+    <section id={projectID} className="project-card">
+        <Link to={"/work/" + projectID} className="cover-link" aria-label={projectName} />
+        <div className="info">
+            <h2>{projectName}</h2>
+            <h3>{projectYear} &middot; {projectCategory}</h3>
+            <p>
+                {projectDesc}
+            </p>
+            <Link to={"/work/" + projectID} className="button"><span>Read More &rarr;</span></Link>
+        </div>
+    </section>
+)
 
-    };
-
-    render () {
-        return (
-            <section id={this.props.projectID} className="project-card">
-                <Link to={"/work/" + this.props.projectID} className="cover-link" aria-label={this.props.projectName} />
-                <div className="info">
-                    <h2>{this.props.projectName}</h2>
-                    <h3>{this.props.projectYear} &middot; {this.props.projectCategory}</h3>
-                    <p>
-                        {this.props.projectDesc}
-                    </p>
-                    <Link to={"/work/" + this.props.projectID} className="button"><span>Read More &rarr;</span></Link>
-                </div>
-            </section>
-        )
-    }
+ProjectCard.propTypes = {
+    projectID: PropTypes.string,
+    projectName: PropTypes.string,
+    projectYear: PropTypes.string,
+    projectCategory: PropTypes.string,
+    projectDesc: PropTypes.string
 }
+  
+ProjectCard.defaultProps = {
+    projectID: ``,
+    projectName: ``,
+    projectYear: ``,
+    projectCategory: ``,
+    projectDesc: ``,
+}
+
+export default ProjectCard;

@@ -1,0 +1,127 @@
+article.case {
+    width: 100%;
+    padding-bottom: 2em;
+}
+
+article.case p, article.case li {
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+article.case h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.5;
+    vertical-align: top;
+    text-decoration: underline;
+}
+
+article.case h2 span {
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 10px;
+    padding-right: 8px;
+    padding-left: 3px;
+    text-decoration: none;
+}
+
+article.case img {
+    width: 100%;
+}
+
+article.case .row {
+    margin-bottom: 2em;
+}
+
+section.project-header-card.mobile {
+    display: none;
+}
+
+div.info.mobile {
+    display: none;
+}
+
+div.info.mobile h2 {
+    margin-bottom: 0;
+}
+
+article.case h3 {
+    font-size: 22px;
+}
+
+article.case.locked, article.case.locked h2, article.case.locked h3 {
+    color: transparent;
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+}
+
+article.case.locked::after {
+    content: "🔒 Currently Unavailable";
+    color: #ffffff;
+    background-color: #3d5afe;
+    padding: 15px 30px;
+    border-radius: 8px;
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+    text-align: center;
+    display: block;
+    font-size: 22px;
+}
+
+article.case ul {
+    padding-left: 2em;
+}
+
+article.case li {
+    margin-bottom: 0.75em;
+}
+
+article.case img {
+    margin: 2em 0;
+}
+
+.case-nav {
+    margin-bottom: 0;
+}
+
+.case-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 40px 0 0 0;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 885px) {
+    section.project-header-card {
+        display: none;
+        background-position: center;
+    }
+
+    section.project-header-card.mobile {
+        display: block;
+        margin-top: 7vh;
+    }
+
+    div.info.mobile {
+        display: block;
+    }
+
+    article.case p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    article#sub-header h3 {
+        margin: 10px 0;
+    }
+
+    article#sub-header ul li {
+        margin: 0;
+    }
+}
