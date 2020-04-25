@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Siraj Chokshi`,
-    description: `Siraj Chokshi is a software engineer and designer studying computer science, cognitive neuroscience and behavior.`,
+    description: `Siraj Chokshi is a software engineer and designer studying computer science, cognitive neuroscience and behavior at UIUC.`,
     author: `@sirajchokshi`,
   },
   plugins: [
