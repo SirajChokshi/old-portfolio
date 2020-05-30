@@ -64,7 +64,7 @@ const PROJECTS = [
   {
     name: "Pic-To-LateX",
     year: "2020",
-    desc: "Resolves an image into aLaTeX formatted output for mathematical equations and proofs. Implemented image segmentation and OCR (Google Tesseract) with OpenCV",
+    desc: "Resolves an image into a LaTeX formatted output for mathematical equations and proofs. Implemented image segmentation and OCR (Google Tesseract) with OpenCV",
     tags: ["Python", "OpenCV"],
   },
   {
