@@ -1,0 +1,130 @@
+header {
+    clear: both;
+    padding-bottom: 30px;
+}
+
+main {
+    clear: both;
+}
+
+header h1 {
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    font-size: 18px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 60px;
+    height: 60px;
+    margin-left: 22px;
+    text-align: center;
+}
+
+nav ul .right-nav {
+    float: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--font-color);
+    opacity: 1;
+}
+
+nav ul li a:before {
+    display: block;
+    content: attr(data-page-name);
+    font-weight: 600;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.active-nav-link {
+    font-weight: 600;
+}
+
+.active-nav-link:hover {
+    color: inherit;
+}
+
+nav ul li a:hover {
+    opacity: 1;
+}
+
+nav ul li#title {
+    text-align: left;
+    float: left;
+    margin: 0;
+}
+
+nav ul li#title a {
+    color: var(--font-color);
+    opacity: 1;
+}
+
+.header-profile {
+    border-radius: 50%;
+    height: 1.75em;
+    margin-top: -0.125em;
+    margin-right: 0.35em;
+    width: 1.75em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 660px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav ul li {
+        font-size: 16px;
+        margin-left: 16px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav ul li {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    p#bio, ul.social li a, :root {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    header {
+        padding-bottom: 0;
+    }
+
+    nav ul li#title {
+        float: none;
+    }
+
+    nav ul .right-nav {
+        float: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul .right-nav li {
+        margin: 0;
+        height: auto;
+        line-height: 1.5;
+        text-align: center;
+        font-size: 16px;
+    }
+}

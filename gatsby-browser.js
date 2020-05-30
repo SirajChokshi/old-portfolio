@@ -5,4 +5,5 @@
  */
 
 // You can delete this file if you're not using it
-// require("prismjs/themes/prism-shades-of-purple.css")
+require("prism-themes/themes/prism-atom-dark.css")
+require("./src/language-tabs.css")

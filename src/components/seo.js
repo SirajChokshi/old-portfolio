@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
+import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, title }) {
@@ -27,19 +27,13 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
 
-  let template = `%s | ${site.siteMetadata.title}`;
-  if (title === "escape") {
-    template = `${site.siteMetadata.title}`;
-    title = `${site.siteMetadata.title}`;
-  }
-
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
       title={title}
-      titleTemplate={template}
+      titleTemplate={title != 'Home' ? `%s | ${site.siteMetadata.title}` : site.siteMetadata.title}
       meta={[
         {
           name: `description`,
@@ -74,7 +68,9 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    ><script src="https://kit.fontawesome.com/c42824823d.js" crossorigin="anonymous"></script></Helmet>
+    >
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet" />
+    </Helmet>
   )
 }
 

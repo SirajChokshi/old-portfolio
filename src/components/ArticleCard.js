@@ -1,25 +1,27 @@
 import { Link } from "gatsby"
 import React from "react"
+import { FaCalendarAlt } from 'react-icons/fa'
 
 import "./articlecard.css"
 
-const ArticleCard = ({post}) => (
+const ArticleCard = ({post, hidedate}) => (
     <section className="article-card" >
+      {
+        (hidedate ? <span /> : (<p className={"date"}><FaCalendarAlt style={{marginRight: "6px"}} />{post.date}</p>))
+      }
         <div className="info">
-            <h3><i className="fas fa-calendar" />{post.date}</h3>
             <h2><Link to={post.path}>{post.title}</Link></h2>
             <p>
                 {post.abstract}
             </p>
-            <ul>
+            <ul className={"tags"}>
                 {
                     (post.tags).map(tag => (
-                        <li><Link to={`/blog/tags/${tag.toLowerCase()}`}>{tag}</Link></li>
+                        <li><Link to={`/blog/tags/${tag.replace(/([A-Z]+)/g, " $1").replace(/([A-Z][a-z])/g, " $1").replace(/\s+/g, '-').toLowerCase().substring(1)}`} data-tag-name={tag}>{tag}</Link></li>
                         )
                     )
                 }
             </ul>
-            {/*<Link to={post.path} className="read-more"><span>Read More</span></Link>*/}
         </div>
     </section>
 );

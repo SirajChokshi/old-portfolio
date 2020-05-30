@@ -8,9 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { animateScroll as scroll } from 'react-scroll';
 
 import Header from "./header"
-import Footer from "./Footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,11 +24,24 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="container">
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
-      <Footer />
-    </div>
+      <div id={"container"}>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <main>{children}</main>
+        <footer>
+          <div className="footer-grid">
+            <p><span className={"wrap-p"}>© Copyright {new Date().getFullYear()} Siraj Chokshi. <span>Can't find something? <a href={"https://archive.sirajchokshi.com"}>Check the archive</a>.</span></span></p>
+          <ul className="social box-all">
+            <li><a href="/resume.pdf" target={"_blank"} rel="noreferrer">Resume</a></li>
+            <li><a href="https://github.com/SirajChokshi" target={"_blank"} rel="noreferrer" data-link-color="github">Github</a>
+            </li>
+            <li><a href="https://linkedin.com/in/sirajchokshi" target={"_blank"} rel="noreferrer"
+                   data-link-color="linkedin">Linkedin</a></li>
+            <li><a href="https://twitter.com/sirajchokshi" target={"_blank"} rel="noreferrer"
+                   data-link-color="twitter">Twitter</a></li>
+          </ul>
+          </div>
+        </footer>
+      </div>
   )
 }
 
