@@ -24,6 +24,17 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
+    const { createRedirect } = actions
+    createRedirect({
+        fromPath: `/work`,
+        toPath: `/projects`,
+        isPermanent: `true`,
+    })
+    createRedirect({
+      fromPath: `/about`,
+      toPath: `/`,
+      isPermanent: `true`,
+    })
 
     const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`);
     const tagTemplate = path.resolve(`src/templates/tags.js`);
