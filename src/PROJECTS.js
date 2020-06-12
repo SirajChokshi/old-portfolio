@@ -49,10 +49,18 @@ const PROJECTS = [
   {
     name: "Git Get",
     year: "2020",
-    desc: "A simple GitHub profile analyzer built to gain insight for users and organizations. Built with a React.JS frontend and a Go API to facilitate caching.",
+    desc: "A simple GitHub profile analyzer built to gain insight for users and organizations. Built with a React.JS frontend and a Go API to facilitate caching",
     tags: ["Go", "React", "JavaScript"],
     repo: "https://github.com/SirajChokshi/git-get",
     demo: "https://gitget.now.sh"
+  },
+  {
+    name: "Shorten",
+    year: "2020",
+    desc: "A URL shortener accessible through a website or CLI. Supports easy-to-remember, randomly generated links or custom aliases",
+    tags: ["Python", "Flask"],
+    repo: "https://github.com/SirajChokshi/shorten",
+    demo: "https://s5n.herokuapp.com"
   },
   {
     name: "SaverLife",

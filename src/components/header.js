@@ -40,7 +40,8 @@ const Header = ({ siteTitle }) => (
           </li>
           <span className={"right-nav"}>
             <li><Link activeClassName="active-nav-link" data-page-name={"About"} to="/">About</Link></li>
-            <li><Link activeClassName="active-nav-link" data-page-name={"Projects"} to="/projects">Projects</Link></li>
+            <li><Link activeClassName="active-nav-link" data-page-name={"Code"} to="/projects">Code</Link></li>
+            <li><Link activeClassName="active-nav-link" data-page-name={"Design"} to="/design">Design</Link></li>
             <li><Link activeClassName="active-nav-link" data-page-name={"Blog"} to="/blog">Blog</Link></li>
           </span>
         </ul>
