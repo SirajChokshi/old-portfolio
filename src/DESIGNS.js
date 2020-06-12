@@ -10,14 +10,14 @@ const DESIGNS = [
     path: "design/finance.png"
   },
   {
-    name: "Music UI",
-    tags: ["UI/UX"],
-    path: "design/music.gif"
-  },
-  {
     name: "IlliniTours UI",
     tags: ["UI/UX"],
     path: "design/illinitours.png"
+  },
+  {
+    name: "Music UI",
+    tags: ["UI/UX"],
+    path: "design/music.gif"
   },
   {
     name: "FileViewer UI",
@@ -33,6 +33,16 @@ const DESIGNS = [
     name: "StartupMatch UI",
     tags: ["UI/UX"],
     path: "design/startupmatch.png"
+  },
+  {
+    name: "Job Application Interface",
+    tags: ["UI/UX"],
+    path: "design/jobs.png"
+  },
+  {
+    name: "Icons",
+    tags: ["UI/UX"],
+    path: "design/icons.jpg"
   },
 ]
 

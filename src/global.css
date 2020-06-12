@@ -60,13 +60,15 @@ p {
 
 .design-grid .item {
     position: relative;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .design-grid .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 5px;
+    transition: transform 0.2s;
 }
 
 .design-grid .item .info {
@@ -76,12 +78,15 @@ p {
     bottom: 0;
     left: 0;
     padding: 1em;
-    border-radius: 5px;
     height: 100%;
     width: 100%;
     color: white;
     background: rgba(0, 0, 0, 0.5);
     transition: opacity 0.2s;
+}
+
+.design-grid .item:hover img {
+    transform: scale(1.05, 1.05);
 }
 
 .design-grid .item:hover .info {
@@ -104,7 +109,7 @@ p {
         font-size: 24px;
     }
 
-    .design-grid .item:nth-child(3n) {
+    .design-grid .item:nth-child(4n) {
         grid-column: span 2;
         font-size: 18px;
     }
