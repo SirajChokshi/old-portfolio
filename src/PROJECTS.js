@@ -18,19 +18,19 @@ const PROJECTS = [
     demo: "https://terrain.sirajchokshi.com"
   },
   {
-    name: "Credit Card Validator",
+    name: "Git Get",
     year: "2020",
-    desc: "Utility to validate credit cards and determine an issuer using Luhn's checksum algorithm implemented in Haskell",
-    tags: ["Haskell"],
-    repo: "https://github.com/SirajChokshi/card-validator"
+    desc: "A simple GitHub profile analyzer built to gain insight for users and organizations. Built with a React.JS frontend and a Go API to facilitate caching.",
+    tags: ["Go", "React", "JavaScript"],
+    repo: "https://github.com/SirajChokshi/git-get",
+    demo: "https://gitget.now.sh"
   },
   {
-    name: "SMM 2 Level Generator",
-    year: "2019",
-    desc: "Super Mario Maker 2 level idea generator with thousands of users. Provides three compatible enemies, a time, a theme and a twist",
-    tags: ["JavaScript"],
-    repo: "https://github.com/SirajChokshi/SMM2-Concept-Generator",
-    demo: "https://mario.sirajchokshi.com"
+    name: "Messenger Data Analysis",
+    year: "2020",
+    desc: "Quantitative metrics and textual analysis for Facebook Messenger data dumps. Using natural language processing to develop understanding about conversations.",
+    tags: ["Python", "NLP"],
+    repo: "https://github.com/SirajChokshi/messenger-data-analysis"
   },
   {
     name: "Poke",
@@ -46,14 +46,7 @@ const PROJECTS = [
     tags: ["Haskell"],
     repo: "https://github.com/SirajChokshi/prvw"
   },
-  {
-    name: "Git Get",
-    year: "2020",
-    desc: "A simple GitHub profile analyzer built to gain insight for users and organizations. Built with a React.JS frontend and a Go API to facilitate caching.",
-    tags: ["Go", "React", "JavaScript"],
-    repo: "https://github.com/SirajChokshi/git-get",
-    demo: "https://gitget.now.sh"
-  },
+
   {
     name: "SaverLife",
     year: "2020",
@@ -72,6 +65,21 @@ const PROJECTS = [
     year: "2020",
     desc: "Time estimations for Chicago Transit Authority (CTA) or the 'L'. Native mobile app and progressive web app integrating with Mapbox and the CTA's APIs",
     tags: ["JavaScript", "Ionic"],
+  },
+  {
+    name: "Credit Card Validator",
+    year: "2020",
+    desc: "Utility to validate credit cards and determine an issuer using Luhn's checksum algorithm implemented in Haskell",
+    tags: ["Haskell"],
+    repo: "https://github.com/SirajChokshi/card-validator"
+  },
+  {
+    name: "SMM 2 Level Generator",
+    year: "2019",
+    desc: "Super Mario Maker 2 level idea generator with thousands of users. Provides three compatible enemies, a time, a theme and a twist",
+    tags: ["JavaScript"],
+    repo: "https://github.com/SirajChokshi/SMM2-Concept-Generator",
+    demo: "https://mario.sirajchokshi.com"
   },
 ]
 
