@@ -61,6 +61,14 @@ const PROJECTS = [
     tags: ["Python", "OpenCV"],
   },
   {
+    name: "Shorten",
+    year: "2020",
+    desc: "A URL shortener accessible through a website or CLI. Supports easy-to-remember, randomly generated links or custom aliases",
+    tags: ["Python", "Flask"],
+    repo: "https://github.com/SirajChokshi/shorten",
+    demo: "https://s5n.herokuapp.com/",
+  },
+  {
     name: "L-Scout",
     year: "2020",
     desc: "Time estimations for Chicago Transit Authority (CTA) or the 'L'. Native mobile app and progressive web app integrating with Mapbox and the CTA's APIs",
