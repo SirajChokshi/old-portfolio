@@ -39,8 +39,8 @@ const Header = ({ siteTitle }) => (
             </h1>
           </li>
           <span className={"right-nav"}>
-            <li><Link activeClassName="active-nav-link" data-page-name={"About"} partiallyActive={true} to="/">About</Link></li>
-            <li><Link activeClassName="active-nav-link" data-page-name={"Projects"} partiallyActive={true} to="/projects">Projects</Link></li>
+            <li><Link activeClassName="active-nav-link" data-page-name={"About"} to="/">About</Link></li>
+            <li><Link activeClassName="active-nav-link" data-page-name={"Projects"} to="/projects">Projects</Link></li>
             <li><Link activeClassName="active-nav-link" data-page-name={"Blog"} partiallyActive={true} to="/blog">Blog</Link></li>
           </span>
         </ul>
