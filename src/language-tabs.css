@@ -21,16 +21,33 @@
     top: 0;
 }
 
-.gatsby-highlight pre[class="language-javascript"]::before {
+.gatsby-highlight pre[class="language-javascript"]::before,
+.gatsby-highlight pre[class="language-js"]::before {
     content: "js";
     background: #f7df1e;
     color: black;
 }
 
-.gatsby-highlight pre[class="language-js"]::before {
-    content: "js";
-    background: #f7df1e;
-    color: black;
+.gatsby-highlight pre[class="language-cpp"]::before {
+    content: "c++";
+    background: #f34b7d;
+    color: white;
+}
+
+.gatsby-highlight pre[class="language-typescript"]::before,
+.gatsby-highlight pre[class="language-ts"]::before
+ {
+    content: "ts";
+    background: #2b7489;
+    color: white;
+}
+
+.gatsby-highlight pre[class="language-python"]::before,
+.gatsby-highlight pre[class="language-py"]::before
+ {
+    content: "py";
+    background: #3572A5;
+    color: white;
 }
 
 .gatsby-highlight pre[class="language-html"]::before {

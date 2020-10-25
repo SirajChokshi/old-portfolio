@@ -23,14 +23,10 @@ const IndexPage = ({
     <h2 className={"page-title"}>Hi, I'm Siraj.</h2>
     <p className={"box-all"} id={"bio"}>
       I’m a software engineer from Boston, MA with a product design background.<br/>
-      Studying Cognition, Computation, and Linguistics at <a target="_blank" rel="noreferrer" data-link-color="uiuc"
-                                                             href="https://illinois.edu">UIUC</a>.<br/>
-      Currently, Software Engineering Intern at <a target="_blank" rel="noreferrer" data-link-color="linkedin"
-                                                   href="https://abbvie.com">AbbVie</a>, Product Design at <a
-      target="_blank" rel="noreferrer" data-link-color="h4i" href="https://uiuc.hack4impact.org">Hack4Impact</a>.<br/>
-      Researching and developing multi-agent systems at the <a target="_blank" rel="noreferrer"
-                                                               href="https://github.com/UIUCLearningLanguageLab">Learning and
-      Language Lab</a>.
+      Studying Cognition, Computation, and Linguistics at <a target="_blank" rel="noreferrer" data-link-color="uiuc" href="https://illinois.edu">UIUC</a>.<br/>
+      Currently, Software Engineering Intern at <a target="_blank" rel="noreferrer" data-link-color="linkedin" href="https://abbvie.com">AbbVie</a>, 
+      Product Design at <a target="_blank" rel="noreferrer" data-link-color="h4i" href="https://uiuc.hack4impact.org">Hack4Impact</a>.<br/>
+      Researching and developing multi-agent systems at the <a target="_blank" rel="noreferrer" href="https://github.com/UIUCLearningLanguageLab">Learning and Language Lab</a>.
     </p>
     <ul className="social box-all">
       <li><a href="/resume.pdf" target={"_blank"} rel="noreferrer">Resume</a></li>

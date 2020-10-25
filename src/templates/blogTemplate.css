@@ -98,6 +98,7 @@
 
 .blog-post-content p {
     margin: 0;
+    margin-top: 0.7em;
     font-size: 18px;
     opacity: 0.8;
     line-height: 2;
@@ -120,6 +121,7 @@
 
     .blog-post-content p {
         margin: 0;
+        margin-top: 0.7em;
         font-size: 16px;
         opacity: 0.8;
         line-height: 1.75;
@@ -133,4 +135,31 @@
 :not(pre) > code[class*="language-"] {
     border-radius: 5px;
     padding: 0.1em 0.3em;
+}
+
+
+:not(pre) > code[class*="language-"] {
+    background: #eeeeee !important;
+    color: var(--font-color) !important;
+    text-shadow: none !important;
+    font-weight: 600;
+}
+
+code {
+    font-weight: 600;
+}
+
+code .token {
+    text-decoration: none !important;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1em 0;
+    width: 100%;
+  }
+  
+table, th, td {
+    border: 1px solid black;
+    padding: 5px 10px;
 }

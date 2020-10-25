@@ -21,7 +21,7 @@ const PROJECTS = [
     name: "Git Get",
     year: "2020",
     desc: "A simple GitHub profile analyzer built to gain insight for users and organizations. Built with a React.JS frontend and a Go API to facilitate caching.",
-    tags: ["Go", "React", "JavaScript"],
+    tags: ["Go", "React", "TypeScript"],
     repo: "https://github.com/SirajChokshi/git-get",
     demo: "https://gitget.now.sh"
   },
@@ -31,6 +31,13 @@ const PROJECTS = [
     desc: "Quantitative metrics and textual analysis for Facebook Messenger data dumps. Using natural language processing to develop understanding about conversations.",
     tags: ["Python", "NLP"],
     repo: "https://github.com/SirajChokshi/messenger-data-analysis"
+  },
+  {
+    name: "Confer",
+    year: "2020",
+    desc: "An open-source SaaS from event and conference management.",
+    tags: ["Kotlin", "React"],
+    repo: "https://github.com/craftdog/confer"
   },
   {
     name: "Poke",
