@@ -35,7 +35,7 @@ const PROJECTS = [
   {
     name: "Confer",
     year: "2020",
-    desc: "An open-source SaaS from event and conference management.",
+    desc: "Event and conference management made easy with a Kotlin-based, open-source SaaS.",
     tags: ["Kotlin", "React"],
     repo: "https://github.com/craftdog/confer"
   },
