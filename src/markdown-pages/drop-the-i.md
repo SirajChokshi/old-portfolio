@@ -83,7 +83,7 @@ cout << centeredUserScore << endl; // 0.64
 ```
 To the compiler this sequence of operations is assignment and subtraction, so our prefixes make no difference. Each value is a floating point, so prepending 'D' as a prefix (e.g. `DScore`) is distracting. Instead, prefixes are here to provide context to values which, when being later referenced, can make their misuse clear to any reader.
 
-A statistical analogy is a great one. Statisticians work with calculus and linear algebra, but they are really in the business of forming conclusions by from datasets through contextualization. In the same way, it is the programmer's job to provide the context a computer cannot understand. This is why semantic prefixes are so powerful for both debugging and readability.
+A statistical analogy is a great one. Statisticians work with calculus and linear algebra, but they are really in the business of forming conclusions from datasets through contextualization. In the same way, it is the programmer's job to provide the context a computer cannot understand. This is why semantic prefixes are so powerful for both debugging and readability.
 
 Returning to the web table exercise from earlier, we can now use prefixes to create two versions of our type. The former type could be renamed to `rawRow` then a new one, containing any new fields necessary, could have the name `processedRow`. Having many named variables also assist in leaning into functional programming for easier debugging.
 ```typescript
