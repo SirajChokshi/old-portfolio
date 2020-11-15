@@ -20,7 +20,7 @@ export default function Template({
     data
 }) {
 
-    mountHighlighting().then(r => console.log("Highlight Ran"));
+    mountHighlighting().catch(e => console.error(e));
 
     const { markdownRemark } = data // data.markdownRemark holds your post data
     const { frontmatter, html } = markdownRemark

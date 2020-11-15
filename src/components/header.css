@@ -99,8 +99,13 @@ nav ul li#title a {
         margin-left: 10px;
     }
 
-    p#bio, ul.social li a, :root {
+    ul.social li a, :root {
         font-size: 14px !important;
+    }
+
+    p#bio {
+        font-size: 15px !important;
+        line-height: 2;
     }
 }
 
