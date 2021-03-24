@@ -33,7 +33,16 @@ const IndexPage = ({
           UIUC
         </a>
         .<br />
-        Software engineering and product intern at a startup.
+        Incoming software engineering intern at{" "}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://linkedin.com"
+          data-link-color="linkedin"
+        >
+          LinkedIn
+        </a>
+        .
         <br />
         Product design for non-profits at{" "}
         <a
@@ -45,7 +54,7 @@ const IndexPage = ({
           Hack4Impact
         </a>
         .<br />
-        Formerly, Intern at{" "}
+        Formerly, a startup,{" "}
         <a
           target="_blank"
           rel="noreferrer"
@@ -54,7 +63,7 @@ const IndexPage = ({
         >
           AbbVie
         </a>
-        , Research at{" "}
+        , and research at{" "}
         <a
           target="_blank"
           rel="noreferrer"

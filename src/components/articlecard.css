@@ -161,6 +161,18 @@ ul.tags li.work-tag[data-tag-name="Go"] {
   background: rgba(0, 162, 156, 0.2);
 }
 
+ul.tags li a[data-tag-name="MongoDB"],
+ul.tags li.work-tag[data-tag-name="MongoDB"] {
+  color: rgba(88, 150, 54, 1);
+  background: rgba(88, 150, 54, 0.2);
+}
+
+ul.tags li a[data-tag-name="Next.js"],
+ul.tags li.work-tag[data-tag-name="Next.js"] {
+  color: rgb(83, 83, 83);
+  background: rgba(83, 83, 83, 0.2);
+}
+
 .tag-link {
   font-size: 20px;
   font-weight: 700;

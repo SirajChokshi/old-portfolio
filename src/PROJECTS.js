@@ -2,8 +2,26 @@ import React from "react"
 
 const PROJECTS = [
   {
+    name: "Falling Fruit",
+    date: "03/2021",
+    desc:
+      "A progressive web application built for foraging non-profit 'Falling Fruit' with a shared codebase for web and mobile application.",
+    tags: ["React", "JavaScript"],
+    repo: "https://github.com/hack4impact-uiuc/falling-fruit",
+    demo: "https://falling-fruit.vercel.app/",
+  },
+  {
+    name: "Startup Directory",
+    date: "02/2021",
+    desc:
+      "A startup directory built by Founders for the University of Illinois at Urbana-Champaign.",
+    tags: ["Next.js", "MongoDB"],
+    repo: "https://github.com/founders/startup-directory",
+    demo: "https://startupdir.vercel.app/",
+  },
+  {
     name: "StartupMatch",
-    year: "2019",
+    date: "10/2019",
     desc:
       "Developed a Single-Page Application integrating a REST API for a job board servicing startups and students at the University of Illinois at Urbana-Champaign",
     tags: ["React", "Python"],
@@ -12,7 +30,7 @@ const PROJECTS = [
   },
   {
     name: "Terrain Generation",
-    year: "2020",
+    date: "05/2020",
     desc:
       "Procedural terrain generator written with C (compiled into WebAssembly) using Perlin2D noise and visualized with HTML5/JavaScript. Prototyped in Python",
     tags: ["WebAssembly", "C", "JavaScript"],
@@ -21,7 +39,7 @@ const PROJECTS = [
   },
   {
     name: "Git Get",
-    year: "2020",
+    date: "08/2020",
     desc:
       "A simple GitHub profile analyzer built to gain insight for users and organizations. Built with a React.JS frontend and a Go API to facilitate caching.",
     tags: ["Go", "React", "TypeScript"],
@@ -30,7 +48,7 @@ const PROJECTS = [
   },
   {
     name: "Messenger Data Analysis",
-    year: "2020",
+    date: "08/2020",
     desc:
       "Quantitative metrics and textual analysis for Facebook Messenger data dumps. Using natural language processing to develop understanding about conversations.",
     tags: ["Python", "NLP"],
@@ -38,7 +56,7 @@ const PROJECTS = [
   },
   {
     name: "Confer",
-    year: "2020",
+    date: "10/2020",
     desc:
       "Event and conference management made easy with a Kotlin-based, open-source SaaS.",
     tags: ["Kotlin", "React"],
@@ -46,7 +64,7 @@ const PROJECTS = [
   },
   {
     name: "Poke",
-    year: "2020",
+    date: "03/2020",
     desc:
       "Progressive web app built with React and Python cloud functions to increase member engagement at university organizations. Designed and developed at HackIllinois 2020",
     tags: ["Ionic", "TypeScript", "Python"],
@@ -54,7 +72,7 @@ const PROJECTS = [
   },
   {
     name: "prvw",
-    year: "2020",
+    date: "06/2020",
     desc:
       "Command-line interface to fetch information about files and directories on your system. Written with Haskell and the turtle hackage",
     tags: ["Haskell"],
@@ -63,7 +81,7 @@ const PROJECTS = [
 
   {
     name: "SaverLife",
-    year: "2020",
+    date: "04/2020",
     desc: (
       <>
         Mobile application for{" "}
@@ -84,14 +102,14 @@ const PROJECTS = [
   },
   {
     name: "Pic-To-LateX",
-    year: "2020",
+    date: "07/2020",
     desc:
       "Resolves an image into a LaTeX formatted output for mathematical equations and proofs. Implemented image segmentation and OCR (Google Tesseract) with OpenCV",
     tags: ["Python", "OpenCV"],
   },
   {
     name: "Shorten",
-    year: "2020",
+    date: "07/2020",
     desc:
       "A URL shortener accessible through a website or CLI. Supports easy-to-remember, randomly generated links or custom aliases",
     tags: ["Python", "Flask"],
@@ -100,14 +118,14 @@ const PROJECTS = [
   },
   {
     name: "L-Scout",
-    year: "2020",
+    date: "01/2020",
     desc:
       "Time estimations for Chicago Transit Authority (CTA) or the 'L'. Native mobile app and progressive web app integrating with Mapbox and the CTA's APIs",
     tags: ["JavaScript", "Ionic"],
   },
   {
     name: "Credit Card Validator",
-    year: "2020",
+    date: "06/2020",
     desc:
       "Utility to validate credit cards and determine an issuer using Luhn's checksum algorithm implemented in Haskell",
     tags: ["Haskell"],
@@ -115,7 +133,7 @@ const PROJECTS = [
   },
   {
     name: "SMM 2 Level Generator",
-    year: "2019",
+    date: "08/2019",
     desc:
       "Super Mario Maker 2 level idea generator with thousands of users. Provides three compatible enemies, a time, a theme and a twist",
     tags: ["JavaScript"],
