@@ -1,160 +1,172 @@
 .article-card {
-    width: 100%;
-    box-sizing: border-box;
-    position: relative;
-    border-radius: 5px;
-    display: flex;
-    flex-flow: row-reverse;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-    margin: 0 0 20px;
-    color: var(--font-color);
-    padding: 0.8em 1.2em;
-    border: 1px rgba(38,38,38,0.4) solid;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row-reverse;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  margin: 0 0 20px;
+  color: var(--font-color);
+  padding: 0.8em 1.2em;
+  border: 1px rgba(38, 38, 38, 0.4) solid;
 }
 
 .article-card:nth-last-child(1) {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .article-card .info {
-    flex: 9;
-    width: 100%;
-    border-radius: 10px;
-    height: 100%;
-    /*padding: 1em 2em;*/
+  flex: 9;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  /*padding: 1em 2em;*/
 }
 
 .article-card h2 {
-    font-size: 1.3rem;
-    margin: 0 0 16px;
-    font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0 0 16px;
+  font-weight: 700;
 }
 
 .article-card h2 a {
-    /*color: #0099cc;*/
-    opacity: 1;
-    text-decoration: none;
+  /*color: #0099cc;*/
+  opacity: 1;
+  text-decoration: none;
 }
 
 .article-card h2 a:hover {
-    opacity: 1;
-    color: var(--font-color)
+  opacity: 1;
+  color: var(--font-color);
 }
 
 .article-card p.date {
-    text-align: right;
-    flex: 2;
-    font-size: 1rem;
-    margin: 0;
-    font-weight: 500;
+  text-align: right;
+  flex: 2;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
 }
 
 .article-card p {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #8A8A8A;
-    line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #8a8a8a;
+  line-height: 1.5;
 }
 
 .article-card ul {
-    padding-left: 0;
-    margin: 0;
+  padding-left: 0;
+  margin: 0;
 }
 
 .article-card ul li {
-    display: inline-block;
+  display: inline-block;
 }
 
-.article-card ul li a, .tag-link {
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-right: 5px;
-    font-size: 15px;
-    padding: 6px 8px;
-    font-weight: 500;
-    color: var(--primary-color);
-    background: rgba(103,86,255,.2);
+.article-card ul li a,
+.tag-link {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 15px;
+  padding: 6px 8px;
+  font-weight: 500;
+  color: var(--primary-color);
+  background: rgba(103, 86, 255, 0.2);
 }
 
 @media screen and (max-width: 900px) {
-    .article-card p.date {
-        text-align: left;
-    }
+  .article-card p.date {
+    text-align: left;
+  }
 
-    .article-card {
-        flex-flow: column;
-    }
+  .article-card {
+    flex-flow: column;
+  }
 
-    .article-card h2 a {
-        opacity: 1;
-    }
+  .article-card h2 a {
+    opacity: 1;
+  }
 
-    .article-card h2 {
-        margin: 5px 0 10px;
-    }
+  .article-card h2 {
+    margin: 5px 0 10px;
+  }
 }
 
-ul.tags li a[data-tag-name='JavaScript'], ul.tags li.work-tag[data-tag-name='JavaScript'] {
-    color: rgb(140, 110, 0);
-    background: rgba(255, 200, 0,.2);
+ul.tags li a[data-tag-name="JavaScript"],
+ul.tags li.work-tag[data-tag-name="JavaScript"] {
+  color: rgb(140, 110, 0);
+  background: rgba(255, 200, 0, 0.2);
 }
 
-ul.tags li a[data-tag-name='Haskell'], ul.tags li.work-tag[data-tag-name='Haskell'] {
-    color: rgb(94,80,134);
-    background: rgba(94,80,134,.2);
+ul.tags li a[data-tag-name="Haskell"],
+ul.tags li.work-tag[data-tag-name="Haskell"] {
+  color: rgb(94, 80, 134);
+  background: rgba(94, 80, 134, 0.2);
 }
 
-ul.tags li a[data-tag-name='Python'], ul.tags li.work-tag[data-tag-name='Python'] {
-    color: rgb(69, 132, 182);
-    background: rgba(69, 132, 182,.2);
+ul.tags li a[data-tag-name="Python"],
+ul.tags li.work-tag[data-tag-name="Python"] {
+  color: rgb(69, 132, 182);
+  background: rgba(69, 132, 182, 0.2);
 }
 
-ul.tags li a[data-tag-name='React'], ul.tags li.work-tag[data-tag-name='React'], ul.tags li.work-tag[data-tag-name='React Native'] {
-    color: rgb(0, 176, 230);
-    background: rgba(0, 176, 230,.2);
+ul.tags li a[data-tag-name="React"],
+ul.tags li.work-tag[data-tag-name="React"],
+ul.tags li.work-tag[data-tag-name="React Native"] {
+  color: rgb(0, 176, 230);
+  background: rgba(0, 176, 230, 0.2);
 }
 
-ul.tags li a[data-tag-name='Ionic'], ul.tags li.work-tag[data-tag-name='Ionic'] {
-    color: rgb(73, 138, 255);
-    background: rgba(73, 138, 255,.2);
+ul.tags li a[data-tag-name="Ionic"],
+ul.tags li.work-tag[data-tag-name="Ionic"] {
+  color: rgb(73, 138, 255);
+  background: rgba(73, 138, 255, 0.2);
 }
 
-ul.tags li a[data-tag-name='C'], ul.tags li.work-tag[data-tag-name='C'] {
-    color: rgba(22, 52, 75, 0.7);
-    background: rgba(22, 52, 75, 0.2);
+ul.tags li a[data-tag-name="C"],
+ul.tags li.work-tag[data-tag-name="C"] {
+  color: rgba(22, 52, 75, 0.7);
+  background: rgba(22, 52, 75, 0.2);
 }
 
-ul.tags li a[data-tag-name='GraphQL'], ul.tags li.work-tag[data-tag-name='GraphQL'] {
-    color: rgba(229, 53, 171, 1);
-    background: rgba(229, 53, 171, 0.2);
+ul.tags li a[data-tag-name="GraphQL"],
+ul.tags li.work-tag[data-tag-name="GraphQL"] {
+  color: rgba(229, 53, 171, 1);
+  background: rgba(229, 53, 171, 0.2);
 }
 
-ul.tags li a[data-tag-name='TypeScript'], ul.tags li.work-tag[data-tag-name='TypeScript'] {
-    color: rgba(0, 122, 204, 1);
-    background: rgba(0, 122, 204, 0.2);
+ul.tags li a[data-tag-name="TypeScript"],
+ul.tags li.work-tag[data-tag-name="TypeScript"] {
+  color: rgba(0, 122, 204, 1);
+  background: rgba(0, 122, 204, 0.2);
 }
 
-ul.tags li a[data-tag-name='Kotlin'], ul.tags li.work-tag[data-tag-name='Kotlin'] {
-    color: rgba(241, 143, 51, 1);
-    background: rgba(241, 143, 51, 0.2);
+ul.tags li a[data-tag-name="Kotlin"],
+ul.tags li.work-tag[data-tag-name="Kotlin"] {
+  color: rgba(241, 143, 51, 1);
+  background: rgba(241, 143, 51, 0.2);
 }
 
-ul.tags li a[data-tag-name='Go'], ul.tags li.work-tag[data-tag-name='Go'] {
-    color: rgba(0, 162, 156, 1);
-    background: rgba(0, 162, 156, 0.2);
+ul.tags li a[data-tag-name="Go"],
+ul.tags li.work-tag[data-tag-name="Go"] {
+  color: rgba(0, 162, 156, 1);
+  background: rgba(0, 162, 156, 0.2);
 }
 
 .tag-link {
-    font-size: 20px;
-    font-weight: 700;
-    opacity: 0.75;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.75;
 }
 
 .tag-link:hover {
-    opacity: 1;
+  opacity: 1;
 }

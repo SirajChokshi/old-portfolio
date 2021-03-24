@@ -33,7 +33,11 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={title != 'Home' ? `%s | ${site.siteMetadata.title}` : site.siteMetadata.title}
+      titleTemplate={
+        title != "Home"
+          ? `%s | ${site.siteMetadata.title}`
+          : site.siteMetadata.title
+      }
       meta={[
         {
           name: `description`,
@@ -69,7 +73,10 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+        rel="stylesheet"
+      />
     </Helmet>
   )
 }

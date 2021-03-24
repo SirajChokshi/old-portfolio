@@ -1,15 +1,17 @@
 :root {
-    --font-stack-ss: 'Inter', -apple-system, BlinkMacSystemFont, 'Lucida Grande', 'Segoe UI', Ubuntu, Fira Sans, Roboto, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-stack-ss: "Inter", -apple-system, BlinkMacSystemFont, "Lucida Grande",
+    "Segoe UI", Ubuntu, Fira Sans, Roboto, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-    /* Light Theme vars */
-    --font-color: #262626;
-    --primary-color: #6756ff;
+  /* Light Theme vars */
+  --font-color: #262626;
+  --primary-color: #6756ff;
 }
 
 [data-theme="dark"] {
-    --primary-color: #9A97F3;
-    --secondary-color: #818cab;
-    --font-color: #e1e1ff;
-    --bg-color: #161625;
-    --heading-color: #818cab;
+  --primary-color: #9a97f3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
 }
