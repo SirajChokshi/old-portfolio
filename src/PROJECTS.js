@@ -5,7 +5,7 @@ const PROJECTS = [
     name: "Falling Fruit",
     date: "03/2021",
     desc:
-      "A progressive web application built for foraging non-profit 'Falling Fruit' with a shared codebase for web and mobile application.",
+      "A progressive web application built for foraging non-profit 'Falling Fruit' with a shared codebase for web and mobile applications.",
     tags: ["React", "JavaScript"],
     repo: "https://github.com/hack4impact-uiuc/falling-fruit",
     demo: "https://falling-fruit.vercel.app/",
