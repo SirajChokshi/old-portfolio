@@ -38,7 +38,7 @@ const myVehicles: IVehicle[] = [myCar]
 myVehicles // [{ "name": "My Car", "make": "Honda", "year": 1998 }]
 ```
 
-In the above example the 'I'-prefix stands out, more so than with the original definitions. This presents a consistency issue, which turns out to be one of the more fundamental issues with using this convention in TypeScript. If this representation of a car needs to be `ICar` should `myCar` not be instantiated as `myICar`? I say the answer to this question is strong 'no', but recognize there is a bigger issue at play
+In the above example the 'I'-prefix stands out, more so than with the original definitions. This presents a consistency issue, which turns out to be one of the more fundamental issues with using this convention in TypeScript. If this representation of a car needs to be `ICar` should `myCar` not be instantiated as `myICar`? I say the answer to this question is strong 'no', but recognize there is a bigger issue at play.
 
 It is likely that somewhere along the line of creating many `ICar` and `IVehicle` references an author drops the prefix as in the example above. When scanning through the prior example nothing pops out as distinctly incorrect or even poor practice. If most programmers would be fine scanning through this snippet and leaving `myCar` named as-is, then the issue lies within the naming of the interface itself. Its real purpose is as a validated key-value store (à la `struct` in C).
 

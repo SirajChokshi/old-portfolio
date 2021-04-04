@@ -1,3 +1,12 @@
+:root {
+  --blog-width: 800px;
+}
+
+.blog-post-meta {
+  max-width: var(--blog-width);
+  margin: 0 auto;
+}
+
 .blog-post-meta .meta {
   font-size: 18px;
   opacity: 0.5;
@@ -62,6 +71,8 @@
 
 .blog-post-content {
   line-height: 1.75;
+  max-width: calc(1.1 * var(--blog-width));
+  margin: 0 auto;
 }
 
 .blog-post-content img {
@@ -97,15 +108,16 @@
 .blog-post-content h5,
 .blog-post-content h6 {
   opacity: 0.8;
-  margin: 1.25rem 0 0.3em;
+  margin: 1.25rem auto 0.3em;
+  max-width: var(--blog-width);
 }
 
 .blog-post-content p {
-  margin: 0;
-  margin-top: 0.7em;
+  margin: 1em auto 0;
   font-size: 18px;
   opacity: 0.8;
   line-height: 2;
+  max-width: var(--blog-width);
 }
 
 @media screen and (max-width: 1200px) {
@@ -124,11 +136,11 @@
   .blog-post-content h5,
   .blog-post-content h6 {
     opacity: 0.8;
-    margin: 1rem 0 0.2em;
+    margin: 1rem auto 0.2em;
   }
 
   .blog-post-content p {
-    margin: 0;
+    margin: 0 auto;
     margin-top: 0.7em;
     font-size: 16px;
     opacity: 0.8;
@@ -138,6 +150,10 @@
   code[class*="language-"] {
     font-size: 16px;
   }
+}
+
+.gatsby-highlight {
+  margin: 1.333em 0;
 }
 
 :not(pre) > code[class*="language-"] {

@@ -33,7 +33,7 @@ const IndexPage = ({
           UIUC
         </a>
         .<br />
-        Incoming software engineering intern at{" "}
+        Incoming software engineer intern at{" "}
         <a
           target="_blank"
           rel="noreferrer"
@@ -41,6 +41,15 @@ const IndexPage = ({
           data-link-color="linkedin"
         >
           LinkedIn
+        </a>
+        {` and `}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://lyft.com"
+          data-link-color="lyft"
+        >
+          Lyft
         </a>
         .
         <br />
