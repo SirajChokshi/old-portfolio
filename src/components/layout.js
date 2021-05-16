@@ -32,13 +32,13 @@ const Layout = ({ children }) => {
           <p>
             <span className={"wrap-p"}>
               © Copyright {new Date().getFullYear()} Siraj Chokshi.{" "}
-              <span>
+              {/* <span>
                 Can't find something?{" "}
                 <a href={"https://archive.sirajchokshi.com"}>
                   Check the archive
                 </a>
                 .
-              </span>
+              </span> */}
             </span>
           </p>
           <ul className="social box-all">
