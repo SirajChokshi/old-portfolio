@@ -33,7 +33,7 @@ const IndexPage = ({
           UIUC
         </a>
         .<br />
-        Incoming software engineer intern at{" "}
+        Software engineer intern at{" "}
         <a
           target="_blank"
           rel="noreferrer"
@@ -42,7 +42,7 @@ const IndexPage = ({
         >
           LinkedIn
         </a>
-        {` and `}
+        {`, incoming at `}
         <a
           target="_blank"
           rel="noreferrer"
