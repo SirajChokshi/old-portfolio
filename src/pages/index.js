@@ -53,7 +53,7 @@ const IndexPage = ({
         </a>
         .
         <br />
-        Product design for non-profits at{" "}
+        Product for non-profits at{" "}
         <a
           target="_blank"
           rel="noreferrer"
@@ -121,7 +121,7 @@ const IndexPage = ({
       </ul>
       <h3>Projects</h3>
       <div className="grid-wrapper">
-        {PROJECTS.slice(0, 4).map(p => (
+        {[...PROJECTS].slice(0, 4).map(p => (
           <WorkCard
             key={"card_" + p.name}
             name={p.name}

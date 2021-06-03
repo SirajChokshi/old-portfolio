@@ -60,18 +60,20 @@ const SecondPage = () => {
       </div>
 
       <div className="grid-wrapper" style={{ marginTop: "1.5em" }}>
-        {PROJECTS.sort((a, b) => SORTERS[order.key](a, b, order.dir)).map(p => (
-          <WorkCard
-            key={"card_" + p.name}
-            name={p.name}
-            year={p.year}
-            desc={p.desc}
-            tags={p.tags}
-            repo={p.repo}
-            demo={p.demo}
-            read={p.read}
-          />
-        ))}
+        {[...PROJECTS]
+          .sort((a, b) => SORTERS[order.key](a, b, order.dir))
+          .map(p => (
+            <WorkCard
+              key={"card_" + p.name}
+              name={p.name}
+              year={p.year}
+              desc={p.desc}
+              tags={p.tags}
+              repo={p.repo}
+              demo={p.demo}
+              read={p.read}
+            />
+          ))}
       </div>
     </Layout>
   )
