@@ -60,7 +60,7 @@
 
 pre,
 code {
-  font-family: monospace;
+  font-family: ui-monospace, Menlo, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 }
 
 pre {
