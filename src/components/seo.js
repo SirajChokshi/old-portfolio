@@ -74,7 +74,7 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
     >
       <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Inter:wght@500;700&display=swap"
         rel="stylesheet"
       />
     </Helmet>
