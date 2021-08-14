@@ -33,16 +33,7 @@ const IndexPage = ({
           UIUC
         </a>
         .<br />
-        Software engineer intern at{" "}
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://linkedin.com"
-          data-link-color="linkedin"
-        >
-          LinkedIn
-        </a>
-        {`, incoming at `}
+        Currently, software engineer intern at{" "}
         <a
           target="_blank"
           rel="noreferrer"
@@ -50,10 +41,8 @@ const IndexPage = ({
           data-link-color="lyft"
         >
           Lyft
-        </a>
-        .
-        <br />
-        Product for non-profits at{" "}
+        </a>{" "}
+        and product for non-profits at{" "}
         <a
           target="_blank"
           rel="noreferrer"
@@ -63,7 +52,16 @@ const IndexPage = ({
           Hack4Impact
         </a>
         .<br />
-        Formerly, a startup,{" "}
+        Formerly,{" "}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://linkedin.com"
+          data-link-color="linkedin"
+        >
+          LinkedIn
+        </a>
+        , a startup,{" "}
         <a
           target="_blank"
           rel="noreferrer"
