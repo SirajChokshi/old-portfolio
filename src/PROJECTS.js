@@ -17,13 +17,13 @@ const PROJECTS = [
       "A startup directory built by Founders for the University of Illinois at Urbana-Champaign.",
     tags: ["Next.js", "MongoDB"],
     repo: "https://github.com/founders/startup-directory",
-    demo: "https://startupdir.vercel.app/",
+    demo: "https://directory.foundersillinois.org",
   },
   {
     name: "StartupMatch",
     date: "10/2019",
     desc:
-      "Developed a Single-Page Application integrating a REST API for a job board servicing startups and students at the University of Illinois at Urbana-Champaign",
+      "Developed a Single-Page Application integrating a REST API for a job board servicing startups and students at the University of Illinois at Urbana-Champaign.",
     tags: ["React", "Python"],
     repo: "https://github.com/SirajChokshi/startup-job-board",
     read: "/blog/startup-job-board",
@@ -32,7 +32,7 @@ const PROJECTS = [
     name: "Terrain Generation",
     date: "05/2020",
     desc:
-      "Procedural terrain generator written with C (compiled into WebAssembly) using Perlin2D noise and visualized with HTML5/JavaScript. Prototyped in Python",
+      "Procedural terrain generator written with C (compiled into WebAssembly) using Perlin2D noise and visualized with HTML5/JavaScript. Prototyped in Python.",
     tags: ["WebAssembly", "C", "JavaScript"],
     repo: "https://github.com/SirajChokshi/terraingeneration",
     demo: "https://terrain.sirajchokshi.com",
@@ -66,7 +66,7 @@ const PROJECTS = [
     name: "Poke",
     date: "03/2020",
     desc:
-      "Progressive web app built with React and Python cloud functions to increase member engagement at university organizations. Designed and developed at HackIllinois 2020",
+      "Progressive web app built with React and Python cloud functions to increase member engagement at university organizations. Designed and developed at HackIllinois 2020.",
     tags: ["Ionic", "TypeScript", "Python"],
     repo: "https://github.com/poke-saas/",
   },
@@ -74,7 +74,7 @@ const PROJECTS = [
     name: "prvw",
     date: "06/2020",
     desc:
-      "Command-line interface to fetch information about files and directories on your system. Written with Haskell and the turtle hackage",
+      "Command-line interface to fetch information about files and directories on your system. Written with Haskell and the turtle hackage.",
     tags: ["Haskell"],
     repo: "https://github.com/SirajChokshi/prvw",
   },
@@ -94,7 +94,7 @@ const PROJECTS = [
           SaverLife
         </a>{" "}
         built to complement their existing web platform. Designed user interface
-        and integrated state management
+        and integrated state management.
       </>
     ),
     tags: ["React Native", "GraphQL"],
@@ -104,14 +104,14 @@ const PROJECTS = [
     name: "Pic-To-LateX",
     date: "07/2020",
     desc:
-      "Resolves an image into a LaTeX formatted output for mathematical equations and proofs. Implemented image segmentation and OCR (Google Tesseract) with OpenCV",
+      "Resolves an image into a LaTeX formatted output for mathematical equations and proofs. Implemented image segmentation and OCR (Google Tesseract) with OpenCV.",
     tags: ["Python", "OpenCV"],
   },
   {
     name: "Shorten",
     date: "07/2020",
     desc:
-      "A URL shortener accessible through a website or CLI. Supports easy-to-remember, randomly generated links or custom aliases",
+      "A URL shortener accessible through a website or CLI. Supports easy-to-remember, randomly generated links or custom aliases.",
     tags: ["Python", "Flask"],
     repo: "https://github.com/SirajChokshi/shorten",
     demo: "https://s5n.herokuapp.com/",
@@ -120,14 +120,14 @@ const PROJECTS = [
     name: "L-Scout",
     date: "01/2020",
     desc:
-      "Time estimations for Chicago Transit Authority (CTA) or the 'L'. Native mobile app and progressive web app integrating with Mapbox and the CTA's APIs",
+      "Time estimations for Chicago Transit Authority (CTA) or the 'L'. Native mobile app and progressive web app integrating with Mapbox and the CTA's APIs.",
     tags: ["JavaScript", "Ionic"],
   },
   {
     name: "Credit Card Validator",
     date: "06/2020",
     desc:
-      "Utility to validate credit cards and determine an issuer using Luhn's checksum algorithm implemented in Haskell",
+      "Utility to validate credit cards and determine an issuer using Luhn's checksum algorithm implemented in Haskell.",
     tags: ["Haskell"],
     repo: "https://github.com/SirajChokshi/card-validator",
   },
@@ -135,7 +135,7 @@ const PROJECTS = [
     name: "SMM 2 Level Generator",
     date: "08/2019",
     desc:
-      "Super Mario Maker 2 level idea generator with thousands of users. Provides three compatible enemies, a time, a theme and a twist",
+      "Super Mario Maker 2 level idea generator with thousands of users. Provides three compatible enemies, a time, a theme and a twist.",
     tags: ["JavaScript"],
     repo: "https://github.com/SirajChokshi/SMM2-Concept-Generator",
     demo: "https://mario.sirajchokshi.com",
