@@ -1,8 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-// Utilities
-// import kebabCase from "lodash/kebabCase"
-// Components
 import SEO from "../../components/seo"
 import Layout from "../../components/layout"
 import { Link, graphql } from "gatsby"
