@@ -14,59 +14,57 @@
   color: var(--font-color);
   padding: 0.8em 1.2em;
   border: 1px rgba(38, 38, 38, 0.4) solid;
-}
 
-.article-card:nth-last-child(1) {
-  margin-bottom: 0;
-}
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
 
-.article-card .info {
-  flex: 9;
-  width: 100%;
-  border-radius: 10px;
-  height: 100%;
-  /*padding: 1em 2em;*/
-}
+  .info {
+    flex: 9;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+  }
 
-.article-card h2 {
-  font-size: 1.3rem;
-  margin: 0 0 16px;
-  font-weight: 700;
-}
+  h2 {
+    font-size: 1.3rem;
+    margin: 0 0 16px;
+    font-weight: 700;
 
-.article-card h2 a {
-  /*color: #0099cc;*/
-  opacity: 1;
-  text-decoration: none;
-}
+    a {
+      opacity: 1;
+      text-decoration: none;
 
-.article-card h2 a:hover {
-  opacity: 1;
-  color: var(--font-color);
-}
+      &:hover {
+        opacity: 1;
+        color: var(--font-color);
+      }
+    }
+  }
 
-.article-card p.date {
-  text-align: right;
-  flex: 2;
-  font-size: 1rem;
-  margin: 0;
-  font-weight: 500;
-}
+  p.date {
+    text-align: right;
+    flex: 2;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 500;
+  }
 
-.article-card p {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #8a8a8a;
-  line-height: 1.5;
-}
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #8a8a8a;
+    line-height: 1.5;
+  }
 
-.article-card ul {
-  padding-left: 0;
-  margin: 0;
-}
+  ul {
+    padding-left: 0;
+    margin: 0;
 
-.article-card ul li {
-  display: inline-block;
+    li {
+      display: inline-block;
+    }
+  }
 }
 
 .article-card ul li a,
@@ -83,20 +81,20 @@
 }
 
 @media screen and (max-width: 900px) {
-  .article-card p.date {
-    text-align: left;
-  }
-
   .article-card {
     flex-flow: column;
-  }
 
-  .article-card h2 a {
-    opacity: 1;
-  }
+    p.date {
+      text-align: left;
+    }
 
-  .article-card h2 {
-    margin: 5px 0 10px;
+    h2 a {
+      opacity: 1;
+    }
+
+    h2 {
+      margin: 5px 0 10px;
+    }
   }
 }
 
@@ -177,8 +175,8 @@ ul.tags li.work-tag[data-tag-name="Next.js"] {
   font-size: 20px;
   font-weight: 700;
   opacity: 0.75;
-}
 
-.tag-link:hover {
-  opacity: 1;
+  &:hover {
+    opacity: 1;
+  }
 }
