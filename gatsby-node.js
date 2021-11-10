@@ -25,6 +25,8 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
   const { createRedirect } = actions
+
+  // synonyms
   createRedirect({
     fromPath: `/work`,
     toPath: `/projects`,
@@ -43,8 +45,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     isPermanent: true,
     redirectInBrowser: false,
   })
+
+  // resume
   createRedirect({
     fromPath: `/resume`,
+    toPath: `/resume.pdf`,
+    isPermanent: true,
+    redirectInBrowser: true,
+  })
+  createRedirect({
+    fromPath: `/cv`,
     toPath: `/resume.pdf`,
     isPermanent: true,
     redirectInBrowser: true,
