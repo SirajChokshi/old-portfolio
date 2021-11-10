@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import { FaCalendarAlt } from "react-icons/fa"
 
-import "./articlecard.css"
+import "./articlecard.scss"
 
 const ArticleCard = ({ post, hidedate }) => (
   <section className="article-card">
