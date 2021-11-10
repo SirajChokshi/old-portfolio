@@ -20,13 +20,13 @@ const PROJECTS = [
     demo: "https://directory.foundersillinois.org",
   },
   {
-    name: "StartupMatch",
-    date: "10/2019",
+    name: "SMM 2 Level Generator",
+    date: "08/2019",
     desc:
-      "Developed a Single-Page Application integrating a REST API for a job board servicing startups and students at the University of Illinois at Urbana-Champaign.",
-    tags: ["React", "Python"],
-    repo: "https://github.com/SirajChokshi/startup-job-board",
-    read: "/blog/startup-job-board",
+      "Super Mario Maker 2 level idea generator with over 12,000 users. Generates game ideas with three compatible enemies, a time, a theme and a twist.",
+    tags: ["JavaScript"],
+    repo: "https://github.com/SirajChokshi/SMM2-Concept-Generator",
+    demo: "https://mario.sirajchokshi.com",
   },
   {
     name: "Terrain Generation",
@@ -53,6 +53,15 @@ const PROJECTS = [
       "Quantitative metrics and textual analysis for Facebook Messenger data dumps. Using natural language processing to develop understanding about conversations.",
     tags: ["Python", "NLP"],
     repo: "https://github.com/SirajChokshi/messenger-data-analysis",
+  },
+  {
+    name: "StartupMatch",
+    date: "10/2019",
+    desc:
+      "Developed a Single-Page Application integrating a REST API for a job board servicing startups and students at the University of Illinois at Urbana-Champaign.",
+    tags: ["React", "Python"],
+    repo: "https://github.com/SirajChokshi/startup-job-board",
+    read: "/blog/startup-job-board",
   },
   {
     name: "Confer",
@@ -130,15 +139,6 @@ const PROJECTS = [
       "Utility to validate credit cards and determine an issuer using Luhn's checksum algorithm implemented in Haskell.",
     tags: ["Haskell"],
     repo: "https://github.com/SirajChokshi/card-validator",
-  },
-  {
-    name: "SMM 2 Level Generator",
-    date: "08/2019",
-    desc:
-      "Super Mario Maker 2 level idea generator with thousands of users. Provides three compatible enemies, a time, a theme and a twist.",
-    tags: ["JavaScript"],
-    repo: "https://github.com/SirajChokshi/SMM2-Concept-Generator",
-    demo: "https://mario.sirajchokshi.com",
   },
 ]
 
