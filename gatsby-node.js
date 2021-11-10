@@ -29,17 +29,23 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     fromPath: `/work`,
     toPath: `/projects`,
     isPermanent: true,
-    redirectInBrowser: true,
+    redirectInBrowser: false,
   })
   createRedirect({
     fromPath: `/writing`,
     toPath: `/blog`,
     isPermanent: true,
-    redirectInBrowser: true,
+    redirectInBrowser: false,
   })
   createRedirect({
     fromPath: `/about`,
     toPath: `/`,
+    isPermanent: true,
+    redirectInBrowser: false,
+  })
+  createRedirect({
+    fromPath: `/resume`,
+    toPath: `/resume.pdf`,
     isPermanent: true,
     redirectInBrowser: true,
   })
