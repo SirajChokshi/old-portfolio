@@ -23,7 +23,7 @@ const SORTERS = {
   alpha: (a, b, dir) => dir * a.name.localeCompare(b.name),
 }
 
-const SecondPage = () => {
+const Projects = () => {
   const [order, setOrder] = React.useState({ dir: -1, key: "date" })
 
   return (
@@ -79,4 +79,4 @@ const SecondPage = () => {
   )
 }
 
-export default SecondPage
+export default Projects
