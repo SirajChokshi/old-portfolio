@@ -17,4 +17,5 @@ gatsby develop
 Deployed on Vercel (Zeit Now)
 
 ## Author
+
 [Siraj Chokshi](https://sirajchokshi.com)
