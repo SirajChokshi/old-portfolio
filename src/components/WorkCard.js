@@ -115,7 +115,6 @@ const WorkCard = props => {
 WorkCard.propTypes = {
   id: PropTypes.string,
   name: PropTypes.string,
-  year: PropTypes.string,
   desc: PropTypes.string,
   tags: PropTypes.array,
 }
@@ -123,7 +122,6 @@ WorkCard.propTypes = {
 WorkCard.defaultProps = {
   id: ``,
   name: ``,
-  year: ``,
   desc: ``,
   tags: [],
 }

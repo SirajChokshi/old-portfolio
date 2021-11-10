@@ -66,7 +66,6 @@ const Projects = () => {
             <WorkCard
               key={"card_" + p.name}
               name={p.name}
-              year={p.year}
               desc={p.desc}
               tags={p.tags}
               repo={p.repo}
