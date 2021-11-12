@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import PROJECTS from '../constants/PROJECTS';
 import WorkCard from '../components/WorkCard';

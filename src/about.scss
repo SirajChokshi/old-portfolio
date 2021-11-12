@@ -5,7 +5,6 @@
 .project-link {
   text-align: center;
   display: flex;
-  /*border: 1px var(--font-color) solid;*/
   justify-content: left;
   align-items: center;
   color: var(--font-color);
@@ -17,41 +16,37 @@
   text-decoration: none;
   height: 100%;
   opacity: 0.6;
-}
 
-.project-link:hover {
-  color: var(--font-color);
-  opacity: 1;
+  &:hover {
+    color: var(--font-color);
+    opacity: 1;
+  }
 }
 
 .arrow-link:after {
-  content: "→";
+  content: '→';
   padding-left: 0.4em;
-  -webkit-transition: padding 0.2s;
-  -moz-transition: padding 0.2s;
-  -ms-transition: padding 0.2s;
-  -o-transition: padding 0.2s;
   transition: padding 0.2s;
 }
 
 .arrow-link:hover:after {
-  content: "→";
+  content: '→';
   padding-left: 0.7em;
 }
 
 ul.social {
   padding: 0;
   margin: 2em 0 3.5em 0;
-}
 
-ul.social li {
-  display: inline-block;
-  margin-right: 2em;
-  font-size: 18px;
-}
+  li {
+    display: inline-block;
+    margin-right: 2em;
+    font-size: 18px;
 
-ul.social li a {
-  text-decoration: none;
+    a {
+      text-decoration: none;
+    }
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -63,76 +58,76 @@ ul.social li a {
     font-size: 16px;
   }
 
-  ul.social li a {
-    font-size: 16px;
-  }
-
   ul.social li {
     margin-right: 1em;
+
+    a {
+      font-size: 16px;
+    }
   }
 }
 
-.box-all a[data-link-color="uiuc"] {
+.box-all a[data-link-color='uiuc'] {
   box-shadow: 0 10px 0 0 rgba(103, 86, 255, 0),
     inset 0 -0.125em rgba(232, 74, 39, 0.2);
 }
 
-.box-all a[data-link-color="uiuc"]:hover {
+.box-all a[data-link-color='uiuc']:hover {
   color: rgb(232, 74, 39);
   box-shadow: 0 1px 0 4px rgba(232, 74, 39, 0.1),
     inset 0 -1.375em 0 rgba(232, 74, 39, 0.1);
 }
 
-.box-all a[data-link-color="twitter"] {
+.box-all a[data-link-color='twitter'] {
   box-shadow: 0 10px 0 0 rgba(103, 86, 255, 0),
     inset 0 -0.125em rgba(29, 160, 242, 0.2);
 }
 
-.box-all a[data-link-color="twitter"]:hover {
+.box-all a[data-link-color='twitter']:hover {
   color: rgb(29, 160, 242);
   box-shadow: 0 1px 0 4px rgba(29, 160, 242, 0.1),
     inset 0 -1.375em 0 rgba(29, 160, 242, 0.1);
 }
 
-.box-all a[data-link-color="linkedin"] {
+.box-all a[data-link-color='linkedin'] {
   box-shadow: 0 10px 0 0 rgba(103, 86, 255, 0),
     inset 0 -0.125em rgba(0, 119, 181, 0.2);
 }
 
-.box-all a[data-link-color="linkedin"]:hover {
+.box-all a[data-link-color='linkedin']:hover {
   color: rgb(0, 119, 181);
   box-shadow: 0 1px 0 4px rgba(0, 119, 181, 0.1),
     inset 0 -1.375em 0 rgba(0, 119, 181, 0.1);
 }
 
-.box-all a[data-link-color="lyft"] {
+.box-all a[data-link-color='lyft'] {
   box-shadow: 0 10px 0 0 rgba(229, 53, 171, 0),
     inset 0 -0.125em rgba(229, 53, 171, 0.2);
 }
 
-.box-all a[data-link-color="lyft"]:hover {
+.box-all a[data-link-color='lyft']:hover {
   color: rgba(229, 53, 171, 1);
   box-shadow: 0 1px 0 4px rgba(229, 53, 171, 0.2),
     inset 0 -1.375em 0 rgba(229, 53, 171, 0.2);
 }
 
-.box-all a[data-link-color="github"] {
+.box-all a[data-link-color='github'] {
   box-shadow: 0 10px 0 0 rgba(103, 86, 255, 0),
     inset 0 -0.125em rgba(51, 51, 51, 0.2);
 }
 
-.box-all a[data-link-color="github"]:hover {
+.box-all a[data-link-color='github']:hover {
   color: rgb(51, 51, 51);
   box-shadow: 0 1px 0 4px rgba(51, 51, 51, 0.1),
     inset 0 -1.375em 0 rgba(51, 51, 51, 0.1);
 }
 
-.box-all a[data-link-color="h4i"] {
+.box-all a[data-link-color='h4i'] {
   box-shadow: 0 10px 0 0 rgba(103, 86, 255, 0),
     inset 0 -0.125em rgba(79, 187, 126, 0.2);
 }
 
-.box-all a[data-link-color="h4i"]:hover {
+.box-all a[data-link-color='h4i']:hover {
   color: rgb(25, 128, 70);
   box-shadow: 0 1px 0 4px rgba(79, 187, 126, 0.1),
     inset 0 -1.375em 0 rgba(79, 187, 126, 0.1);

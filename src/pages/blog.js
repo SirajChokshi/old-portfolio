@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import PostLink from '../components/post-link';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import ArticleCard from '../components/ArticleCard';
 
@@ -10,8 +9,8 @@ const BlogPage = ({
     allMarkdownRemark: { edges },
   },
 }) => {
-  const Posts = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+  const posts = edges
+    .filter(edge => !!edge.node.frontmatter.date)
     .map(edge => {
       return <ArticleCard key={edge.node.id} post={edge.node.frontmatter} />;
     });
@@ -20,7 +19,7 @@ const BlogPage = ({
     <Layout>
       <SEO title="Blog" />
       <h2 className="work-header page-title">Blog</h2>
-      <div style={{ marginTop: '1.5em' }}>{Posts}</div>
+      <div style={{ marginTop: '1.5em' }}>{posts}</div>
     </Layout>
   );
 };

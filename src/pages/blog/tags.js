@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SEO from '../../components/seo';
-import Layout from '../../components/layout';
+import Layout from '../../components/Layout';
 import { Link, graphql } from 'gatsby';
 const TagsPage = ({
   data: {

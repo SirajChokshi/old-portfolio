@@ -13,23 +13,23 @@ const WorkTag = ({ name }) => {
   );
 };
 
-const WorkCard = props => {
+const WorkCard = ({ id, name, desc, repo, demo, read, tags }) => {
   const [isRepoHovered, hoverRepo] = useState(false);
   const [isDemoHovered, hoverDemo] = useState(false);
   const [isReadHovered, hoverRead] = useState(false);
 
   return (
-    <section id={props.id} className="work-card">
+    <section id={id} className="work-card">
       <div className="work-card-inner">
         <div className="work-card-body">
-          <h2>{props.name}</h2>
-          <p>{props.desc}</p>
+          <h2>{name}</h2>
+          <p>{desc}</p>
         </div>
         <div className="work-card-bottom">
           <div className="work-card-bottom-left">
-            {props.repo ? (
+            {repo ? (
               <a
-                href={props.repo}
+                href={repo}
                 rel="noreferrer"
                 target={'_blank'}
                 onMouseEnter={() => hoverRepo(true)}
@@ -57,9 +57,9 @@ const WorkCard = props => {
               </a>
             )}
 
-            {props.demo && (
+            {demo && (
               <a
-                href={props.demo}
+                href={demo}
                 rel="noreferrer"
                 onMouseEnter={() => hoverDemo(true)}
                 onMouseLeave={() => hoverDemo(false)}
@@ -80,9 +80,9 @@ const WorkCard = props => {
               </a>
             )}
 
-            {props.read && (
+            {read && (
               <Link
-                to={props.read}
+                to={read}
                 onMouseEnter={() => hoverRead(true)}
                 onMouseLeave={() => hoverRead(false)}
                 target={'_blank'}
@@ -101,7 +101,7 @@ const WorkCard = props => {
           </div>
           <div className="work-card-bottom-right">
             <ul className="work-card-header tags">
-              {props.tags.map(tag => (
+              {tags.map(tag => (
                 <WorkTag name={tag} />
               ))}
             </ul>

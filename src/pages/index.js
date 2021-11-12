@@ -5,8 +5,8 @@ import 'normalize.css';
 import '../root.css';
 import '../tags.scss';
 import '../global.css';
-import '../about.css';
-import Layout from '../components/layout';
+import '../about.scss';
+import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import WorkCard from '../components/WorkCard';
 import PROJECTS from '../constants/PROJECTS';
@@ -15,15 +15,15 @@ import { CssVarsPonyfill } from 'css-vars-ponyfill-react';
 
 const IndexPage = ({
   data: {
-    allMarkdownRemark: { edges },
+    allMarkdownRemark: { edges: posts },
   },
 }) => {
   CssVarsPonyfill();
   return (
     <Layout>
       <SEO title="Home" />
-      <h2 className={'page-title'}>Hi, I'm Siraj.</h2>
-      <p className={'box-all'} id={'bio'}>
+      <h2 className="page-title">Hi, I'm Siraj.</h2>
+      <p className="box-all" id="bio">
         I’m a software engineer and designer from Boston, MA studying at{' '}
         <a
           target="_blank"
@@ -83,14 +83,14 @@ const IndexPage = ({
       </p>
       <ul className="social box-all">
         <li>
-          <a href="/resume.pdf" target={'_blank'} rel="noreferrer">
+          <a href="/resume.pdf" target="_blank" rel="noreferrer">
             Resume
           </a>
         </li>
         <li>
           <a
             href="https://github.com/SirajChokshi"
-            target={'_blank'}
+            target="_blank"
             rel="noreferrer"
             data-link-color="github"
           >
@@ -100,7 +100,7 @@ const IndexPage = ({
         <li>
           <a
             href="https://linkedin.com/in/sirajchokshi"
-            target={'_blank'}
+            target="_blank"
             rel="noreferrer"
             data-link-color="linkedin"
           >
@@ -110,7 +110,7 @@ const IndexPage = ({
         <li>
           <a
             href="https://twitter.com/sirajchokshi"
-            target={'_blank'}
+            target="_blank"
             rel="noreferrer"
             data-link-color="twitter"
           >
@@ -124,7 +124,6 @@ const IndexPage = ({
           <WorkCard
             key={'card_' + p.name}
             name={p.name}
-            year={p.year}
             desc={p.desc}
             tags={p.tags}
             repo={p.repo}
@@ -133,21 +132,16 @@ const IndexPage = ({
           />
         ))}
       </div>
-      <Link to={'/projects'} className={'project-link arrow-link'}>
+      <Link to="/projects" className="project-link arrow-link">
         View All Projects
       </Link>
       <h3>Writing</h3>
       <span>
-        {edges
-          .slice(0, 3)
-          .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-          .map(edge => {
-            return (
-              <ArticleCard key={edge.node.id} post={edge.node.frontmatter} />
-            );
-          })}
+        {posts.slice(0, 3).map(({ node: { id, frontmatter } }) => {
+          return <ArticleCard key={id} post={frontmatter} />;
+        })}
       </span>
-      <Link to={'/blog'} className={'project-link arrow-link'}>
+      <Link to="/blog" className="project-link arrow-link">
         View All Posts
       </Link>
     </Layout>
