@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby';
 
 import 'normalize.css';
 import '../root.css';
+import '../tags.scss';
 import '../global.css';
 import '../about.css';
 import Layout from '../components/layout';

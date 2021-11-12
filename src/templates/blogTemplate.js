@@ -2,35 +2,37 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import ArticleCard from '../components/ArticleCard';
-import './blogTemplate.css';
+import './blogTemplate.scss';
 import { FaCalendarAlt, FaTag } from 'react-icons/fa';
+import codeLoader from '@deckdeckgo/highlight-code/dist/loader';
 
 const mountHighlighting = async () => {
   try {
-    const deckdeckgoHighlightCodeLoader = require('@deckdeckgo/highlight-code/dist/loader');
-
-    await deckdeckgoHighlightCodeLoader.defineCustomElements(window);
+    await codeLoader.defineCustomElements(window);
   } catch (err) {
     console.error(err);
   }
 };
 
 export default function Template({ data }) {
-  mountHighlighting().catch(e => console.error(e));
+  mountHighlighting();
 
-  const { markdownRemark } = data; // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark;
+  const { markdownRemark } = data;
+  const {
+    frontmatter: { title, tags, date, photo },
+    html,
+  } = markdownRemark;
+
   return (
     <Layout>
-      <SEO title={frontmatter.title} />
+      <SEO title={title} />
       <div className="blog-post-container">
         <div className="blog-post">
           <div className="blog-post-meta">
-            <h2 className={'page-title'}>{frontmatter.title}</h2>
+            <h2 className={'page-title'}>{title}</h2>
             <h3 className="meta">
               <FaCalendarAlt style={{ marginRight: '6px' }} />
-              {frontmatter.date}
+              {date}
             </h3>
             <ul className="tags">
               <li className="tags-label">
@@ -42,7 +44,7 @@ export default function Template({ data }) {
                   }}
                 />
               </li>
-              {frontmatter.tags.map(tag => (
+              {tags.map(tag => (
                 <li key={tag}>
                   <Link
                     to={`/blog/tags/${tag
@@ -58,9 +60,7 @@ export default function Template({ data }) {
                 </li>
               ))}
             </ul>
-            {frontmatter.photo && (
-              <img src={frontmatter.photo} alt={frontmatter.title} />
-            )}
+            {photo && <img src={photo} alt={title} />}
           </div>
         </div>
       </div>

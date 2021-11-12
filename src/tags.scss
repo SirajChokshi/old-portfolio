@@ -1,0 +1,84 @@
+ul.tags {
+  li a[data-tag-name='JavaScript'],
+  li.work-tag[data-tag-name='JavaScript'] {
+    color: rgb(140, 110, 0);
+    background: rgba(255, 200, 0, 0.2);
+  }
+
+  li a[data-tag-name='Haskell'],
+  li.work-tag[data-tag-name='Haskell'] {
+    color: rgb(94, 80, 134);
+    background: rgba(94, 80, 134, 0.2);
+  }
+
+  li a[data-tag-name='Python'],
+  li.work-tag[data-tag-name='Python'] {
+    color: rgb(69, 132, 182);
+    background: rgba(69, 132, 182, 0.2);
+  }
+
+  li a[data-tag-name='React'],
+  li.work-tag[data-tag-name='React'],
+  li.work-tag[data-tag-name='React Native'] {
+    color: rgb(0, 176, 230);
+    background: rgba(0, 176, 230, 0.2);
+  }
+
+  li a[data-tag-name='Ionic'],
+  li.work-tag[data-tag-name='Ionic'] {
+    color: rgb(73, 138, 255);
+    background: rgba(73, 138, 255, 0.2);
+  }
+
+  li a[data-tag-name='C'],
+  li.work-tag[data-tag-name='C'] {
+    color: rgba(22, 52, 75, 0.7);
+    background: rgba(22, 52, 75, 0.2);
+  }
+
+  li a[data-tag-name='GraphQL'],
+  li.work-tag[data-tag-name='GraphQL'] {
+    color: rgba(229, 53, 171, 1);
+    background: rgba(229, 53, 171, 0.2);
+  }
+
+  li a[data-tag-name='TypeScript'],
+  li.work-tag[data-tag-name='TypeScript'] {
+    color: rgba(0, 122, 204, 1);
+    background: rgba(0, 122, 204, 0.2);
+  }
+
+  li a[data-tag-name='Kotlin'],
+  li.work-tag[data-tag-name='Kotlin'] {
+    color: rgba(241, 143, 51, 1);
+    background: rgba(241, 143, 51, 0.2);
+  }
+
+  li a[data-tag-name='Go'],
+  li.work-tag[data-tag-name='Go'] {
+    color: rgba(0, 162, 156, 1);
+    background: rgba(0, 162, 156, 0.2);
+  }
+
+  li a[data-tag-name='MongoDB'],
+  li.work-tag[data-tag-name='MongoDB'] {
+    color: rgba(88, 150, 54, 1);
+    background: rgba(88, 150, 54, 0.2);
+  }
+
+  li a[data-tag-name='Next.js'],
+  li.work-tag[data-tag-name='Next.js'] {
+    color: rgb(83, 83, 83);
+    background: rgba(83, 83, 83, 0.2);
+  }
+}
+
+.tag-link {
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.75;
+
+  &:hover {
+    opacity: 1;
+  }
+}
