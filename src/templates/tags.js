@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 // Components
 import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import SEO from '../components/SEO';
 import ArticleCard from '../components/ArticleCard';
 
 const Tags = ({ pageContext, data }) => {

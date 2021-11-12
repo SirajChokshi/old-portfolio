@@ -7,7 +7,7 @@ import '../tags.scss';
 import '../global.css';
 import '../about.scss';
 import Layout from '../components/Layout';
-import SEO from '../components/seo';
+import SEO from '../components/SEO';
 import WorkCard from '../components/WorkCard';
 import PROJECTS from '../constants/PROJECTS';
 import ArticleCard from '../components/ArticleCard';

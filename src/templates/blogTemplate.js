@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/Layout';
-import SEO from '../components/seo';
+import SEO from '../components/SEO';
 import './blogTemplate.scss';
 import { FaCalendarAlt, FaTag } from 'react-icons/fa';
 import codeLoader from '@deckdeckgo/highlight-code/dist/loader';

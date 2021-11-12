@@ -9,7 +9,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import './footer.scss';
+import './Footer.scss';
 
 import Header from '../Header';
 
