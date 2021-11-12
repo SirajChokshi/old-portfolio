@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import SEO from '../../components/SEO';
 import Layout from '../../components/Layout';
 import { Link, graphql } from 'gatsby';
+
 const TagsPage = ({
   data: {
     allMarkdownRemark: { group },
@@ -22,10 +23,10 @@ const TagsPage = ({
         .sort((a, b) => b.totalCount - a.totalCount)
         .map(tag => (
           <li key={tag.fieldValue} style={{ display: 'inline-block' }}>
-            <h3 style={{ margin: '0.6em 0' }}>
+            <h3 style={{ margin: '0.3em 0' }}>
               <Link
                 data-tag-name={tag.fieldValue}
-                className={'tag-link'}
+                className="tag-link"
                 to={`/blog/tags/${tag.fieldValue
                   .replace(/([A-Z]+)/g, ' $1')
                   .replace(/([A-Z][a-z])/g, ' $1')

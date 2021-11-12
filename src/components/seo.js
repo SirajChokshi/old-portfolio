@@ -34,7 +34,7 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={
-        title != 'Home'
+        title !== 'Home'
           ? `%s | ${site.siteMetadata.title}`
           : site.siteMetadata.title
       }

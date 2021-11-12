@@ -96,7 +96,7 @@ const PROJECTS = [
         Mobile application for{' '}
         <a
           href={'https://www.saverlife.org'}
-          rel="noopener"
+          rel="noreferrer"
           style={{ color: '#8A8A8A' }}
           target={'_blank'}
         >

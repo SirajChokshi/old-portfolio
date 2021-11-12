@@ -46,6 +46,7 @@ const WorkCard = ({ id, name, desc, repo, demo, read, tags }) => {
                       width: '1.3em',
                       height: '1.3em',
                     }}
+                    alt=""
                   />
                 )}
                 <span style={{ verticalAlign: 'middle' }}> Repository</span>
