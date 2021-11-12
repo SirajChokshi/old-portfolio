@@ -4,6 +4,9 @@ module.exports = {
     description: `Siraj Chokshi is a software engineer studying cognition, computation and linguistics at UIUC.`,
     author: `@sirajchokshi`,
   },
+  flags: {
+    PARALLEL_QUERY_RUNNING: true,
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
