@@ -154,6 +154,20 @@ table {
   }
 }
 
+.footnote-ref {
+  font-weight: bold;
+}
+
+.footnotes {
+  margin-top: 2.3em;
+
+  .footnote-backref {
+    margin-left: 0.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .blog-post-content {
     h1 {

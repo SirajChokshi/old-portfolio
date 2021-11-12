@@ -39,15 +39,34 @@ const WorkCard = ({ id, name, desc, repo, demo, read, tags }) => {
                 {!isRepoHovered ? (
                   <Repo size="1.3em" style={{ verticalAlign: 'middle' }} />
                 ) : (
-                  <img
-                    src={'repoHovered.svg'}
+                  <svg
+                    enable-background="new 0 0 15.6 15.6"
+                    viewBox="0 0 15.6 15.6"
+                    xmlns="http://www.w3.org/2000/svg"
                     style={{
                       verticalAlign: 'middle',
                       width: '1.3em',
                       height: '1.3em',
                     }}
-                    alt=""
-                  />
+                  >
+                    <path d="m13.7 1v11.7c0 .6-.5 1-1 1h-4.9v1.9l-1.5-1.5-1.5 1.5v-1.9h-1.9c-.6 0-1-.5-1-1v-11.7c0-.6.5-1 1-1h9.8c.5 0 .9.4 1 1z" />
+                    <path d="m4.1 1.7h2.8v7.5h-2.8z" fill="#fff" />
+                    <path
+                      clip-rule="evenodd"
+                      d="m3.9 1v8.8h8.8v-8.8zm1.9 7.8h-1v-1h1zm0-2h-1v-1h1zm0-1.9h-1v-1h1zm0-2h-1v-1h1z"
+                      fill-rule="evenodd"
+                    />
+                    <path
+                      clip-rule="evenodd"
+                      d="m12.7 12.7v-2h-9.8v2h2v-1h2.9v1z"
+                      fill="#fff"
+                      fill-rule="evenodd"
+                    />
+                    <path
+                      d="m13.7 1v11.7c0 .6-.5 1-1 1h-4.9v1.9l-1.5-1.5-1.5 1.5v-1.9h-1.9c-.6 0-1-.5-1-1v-11.7c0-.6.5-1 1-1h9.8c.5 0 .9.4 1 1z"
+                      fill="none"
+                    />
+                  </svg>
                 )}
                 <span style={{ verticalAlign: 'middle' }}> Repository</span>
               </a>

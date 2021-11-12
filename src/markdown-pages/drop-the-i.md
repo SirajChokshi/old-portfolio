@@ -48,7 +48,7 @@ Broadly, a simple way to think about how prefixes in naming should work is think
 
 ## When Using Prefixes
 
-Drawing directly from the previous example, there is a reason that most languages<sup>1</sup> implement a list interface as a `List<T>` as opposed to a `IList<T>` because if they perform the same semantic purpose the underlying implementation is not all that important. A good time to use prefixes however, is in the opposite case: a semantic disagreement between two definitions with similar contents.
+Drawing directly from the previous example, there is a reason that most languages [^hungarian] implement a list interface as a `List<T>` as opposed to a `IList<T>` because if they perform the same semantic purpose the underlying implementation is not all that important. A good time to use prefixes however, is in the opposite case: a semantic disagreement between two definitions with similar contents.
 
 Take, for example, loading in data from a spreadsheet whose rows need to be displayed in a web table. The head of my original data could look like the following.
 
@@ -132,6 +132,4 @@ Now, as long as we reference the correctly prefixed value when accessing this da
 
 While I am of the belief that I made a strong case for not using type prefixes there is nothing more valuable in code readability than consistency. The team I work on uses 'I'-prefixes for interfaces within our TypeScript frontends. When developing its important to use conventions from your style guide. An abstract "best practice" is not valuable until consistent. With many projects, sticking with what engineers find comfortable will help teams moves fast. In some cases that calls for keeping the 'I'.
 
-### Footnotes
-
-1. Most languages with a notable exception of C#. The Microsoft .NET style guide popularized the idea of type prefixes. The popularity of 'hungarian' conventions led to programmers over-using it outside of its useful purposes
+[^hungarian]: Most languages with a notable exception of C#. The Microsoft .NET style guide popularized the idea of type prefixes. The popularity of 'hungarian' conventions led to programmers over-using it outside of its useful purposes
