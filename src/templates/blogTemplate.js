@@ -4,11 +4,11 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import './blogTemplate.scss';
 import { FaCalendarAlt, FaTag } from 'react-icons/fa';
-import codeLoader from '@deckdeckgo/highlight-code/dist/loader';
+import * as codeLoader from '@deckdeckgo/highlight-code/dist/loader';
 
 const mountHighlighting = async () => {
   try {
-    await codeLoader.defineCustomElements(window);
+    await codeLoader.defineCustomElements();
   } catch (err) {
     console.error(err);
   }
