@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import './header.scss';
+import './Header.scss';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
