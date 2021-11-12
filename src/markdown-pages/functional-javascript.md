@@ -1,10 +1,10 @@
 ---
-path: "/blog/functional-javascript-es6"
-date: "2020-05-27"
-title: "Why and How to Write Functional JavaScript with ES6"
-tags: ["JavaScript"]
-abstract: "ES6 allows for integration of functional programming in existing JavaScript programs."
-photo: ""
+path: '/blog/functional-javascript-es6'
+date: '2020-05-27'
+title: 'Why and How to Write Functional JavaScript with ES6'
+tags: ['JavaScript']
+abstract: 'ES6 allows for integration of functional programming in existing JavaScript programs.'
+photo: ''
 ---
 
 With functional programming's increasing popularity many developers are giving it a shot. While you
@@ -23,15 +23,15 @@ a function is first-class when it is able to be used as if it was a variable. Th
 ```javascript
 // where `a` and `b` are numbers
 const add = function (a, b) {
-  return a + b
-}
+  return a + b;
+};
 
 const calc = (operation, a, b) => {
-  return operation(a, b)
-}
+  return operation(a, b);
+};
 
 // Pass `add`, `1`, and `2` as arguments to the `calc` function
-calc(add, 1, 2) // = 3
+calc(add, 1, 2); // = 3
 ```
 
 In this case `add` is declared as a traditional function and assigned to a variable, and it can be invoked directly with `add(a,b)`.
@@ -81,14 +81,14 @@ to be written with either truthy values or JavaScript's implicit iterable `argum
  *  returns the sum for any length of numerical arguments
  */
 function sum() {
-  let sum = 0
-  for (const arg of arguments) sum += arg
+  let sum = 0;
+  for (const arg of arguments) sum += arg;
   // iterate through JavaScript's implicitly created `arguments` array
-  return sum
+  return sum;
 }
 
-sum() // = 0
-sum(1, 2, 3, 4) // = 10
+sum(); // = 0
+sum(1, 2, 3, 4); // = 10
 ```
 
 ### Writing Recursively

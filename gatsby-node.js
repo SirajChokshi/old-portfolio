@@ -6,25 +6,25 @@
 
 // You can delete this file if you're not using it
 
-const path = require(`path`)
-const _ = require("lodash")
+const path = require(`path`);
+const _ = require('lodash');
 
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const { createFilePath } = require(`gatsby-source-filesystem`);
 exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
+  const { createNodeField } = actions;
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` })
+    const slug = createFilePath({ node, getNode, basePath: `pages` });
     createNodeField({
       node,
       name: `slug`,
       value: slug,
-    })
+    });
   }
-}
+};
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
-  const { createRedirect } = actions
+  const { createPage } = actions;
+  const { createRedirect } = actions;
 
   // synonyms
   createRedirect({
@@ -32,19 +32,19 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     toPath: `/projects`,
     isPermanent: true,
     redirectInBrowser: false,
-  })
+  });
   createRedirect({
     fromPath: `/writing`,
     toPath: `/blog`,
     isPermanent: true,
     redirectInBrowser: false,
-  })
+  });
   createRedirect({
     fromPath: `/about`,
     toPath: `/`,
     isPermanent: true,
     redirectInBrowser: false,
-  })
+  });
 
   // resume
   createRedirect({
@@ -52,16 +52,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     toPath: `/resume.pdf`,
     isPermanent: true,
     redirectInBrowser: true,
-  })
+  });
   createRedirect({
     fromPath: `/cv`,
     toPath: `/resume.pdf`,
     isPermanent: true,
     redirectInBrowser: true,
-  })
+  });
 
-  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
-  const tagTemplate = path.resolve(`src/templates/tags.js`)
+  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`);
+  const tagTemplate = path.resolve(`src/templates/tags.js`);
 
   const result = await graphql(`
     {
@@ -87,12 +87,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         }
       }
     }
-  `)
+  `);
 
   // Handle errors
   if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
+    reporter.panicOnBuild(`Error while running GraphQL query.`);
+    return;
   }
 
   result.data.postsRemark.edges.forEach(({ node }) => {
@@ -100,11 +100,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: node.frontmatter.path,
       component: blogPostTemplate,
       context: {}, // additional data can be passed via context
-    })
-  })
+    });
+  });
 
   // Extract tag data from query
-  const tags = result.data.tagsGroup.group
+  const tags = result.data.tagsGroup.group;
   // Make tag pages
   tags.forEach(tag => {
     createPage({
@@ -113,6 +113,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       context: {
         tag: tag.fieldValue,
       },
-    })
-  })
-}
+    });
+  });
+};

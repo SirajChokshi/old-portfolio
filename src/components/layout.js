@@ -5,12 +5,12 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import { animateScroll as scroll } from "react-scroll"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
+import { animateScroll as scroll } from 'react-scroll';
 
-import Header from "./header"
+import Header from './Header';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -21,17 +21,17 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
-    <div id={"container"}>
+    <div id={'container'}>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <footer>
         <div className="footer-grid">
           <p>
-            <span className={"wrap-p"}>
-              © Copyright {new Date().getFullYear()} Siraj Chokshi.{" "}
+            <span className={'wrap-p'}>
+              © Copyright {new Date().getFullYear()} Siraj Chokshi.{' '}
               {/* <span>
                 Can't find something?{" "}
                 <a href={"https://archive.sirajchokshi.com"}>
@@ -43,14 +43,14 @@ const Layout = ({ children }) => {
           </p>
           <ul className="social box-all">
             <li>
-              <a href="/resume.pdf" target={"_blank"} rel="noreferrer">
+              <a href="/resume.pdf" target={'_blank'} rel="noreferrer">
                 Resume
               </a>
             </li>
             <li>
               <a
                 href="https://github.com/SirajChokshi"
-                target={"_blank"}
+                target={'_blank'}
                 rel="noreferrer"
                 data-link-color="github"
               >
@@ -60,7 +60,7 @@ const Layout = ({ children }) => {
             <li>
               <a
                 href="https://linkedin.com/in/sirajchokshi"
-                target={"_blank"}
+                target={'_blank'}
                 rel="noreferrer"
                 data-link-color="linkedin"
               >
@@ -70,7 +70,7 @@ const Layout = ({ children }) => {
             <li>
               <a
                 href="https://twitter.com/sirajchokshi"
-                target={"_blank"}
+                target={'_blank'}
                 rel="noreferrer"
                 data-link-color="twitter"
               >
@@ -81,11 +81,11 @@ const Layout = ({ children }) => {
         </div>
       </footer>
     </div>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

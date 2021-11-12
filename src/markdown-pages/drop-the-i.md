@@ -1,10 +1,10 @@
 ---
-path: "/blog/drop-the-i"
-date: "2020-10-25"
+path: '/blog/drop-the-i'
+date: '2020-10-25'
 title: "Drop the 'I' and When to Use Prefixes"
-tags: ["TypeScript"]
-abstract: "Clearer naming conventions for a strongly typed web."
-photo: ""
+tags: ['TypeScript']
+abstract: 'Clearer naming conventions for a strongly typed web.'
+photo: ''
 ---
 
 Wider adoption of TypeScript has led to a web that is more type-safe than ever. Many stacks are still written solely in JavaScript, but a multitude of developers are transitioning over. During this transition, developers are bringing practices from other paradigms along with them. TypeScript is on the newer end of languages and there are a variety of standardized practices in circulation. This post is a refresher on semantics and consistent, readable code. While the ideas presented are not new, new structurally typed frontends re-contextualize them.
@@ -17,12 +17,12 @@ Consequent to the semantic use of Interfaces, naming one with an 'I' (e.g. `inte
 
 ```typescript
 interface IVehicle {
-  name: string
+  name: string;
 }
 
 interface ICar extends IVehicle {
-  make: string
-  year: number
+  make: string;
+  year: number;
 }
 ```
 
@@ -30,12 +30,12 @@ Nothing about these definitions alone are wrong, but lets step through an exampl
 
 ```typescript
 // initialize a car
-const myCar: ICar = { name: "My Car", make: "Honda", year: 2000 }
+const myCar: ICar = { name: 'My Car', make: 'Honda', year: 2000 };
 
 // initialize an array of vehicles with `myCar`
-const myVehicles: IVehicle[] = [myCar]
+const myVehicles: IVehicle[] = [myCar];
 
-myVehicles // [{ "name": "My Car", "make": "Honda", "year": 1998 }]
+myVehicles; // [{ "name": "My Car", "make": "Honda", "year": 1998 }]
 ```
 
 In the above example the 'I'-prefix stands out, more so than with the original definitions. This presents a consistency issue, which turns out to be one of the more fundamental issues with using this convention in TypeScript. If this representation of a car needs to be `ICar` should `myCar` not be instantiated as `myICar`? I say the answer to this question is strong 'no', but recognize there is a bigger issue at play.
@@ -64,8 +64,8 @@ To match this table schema I have defined an interface below and used it to disp
 
 ```typescript
 interface Row {
-  product_id: string
-  price: number
+  product_id: string;
+  price: number;
 }
 ```
 
@@ -94,12 +94,12 @@ Returning to the web table exercise from earlier, we can now use prefixes to cre
 
 ```typescript
 interface rawRow {
-  product_id: string
-  price: number
+  product_id: string;
+  price: number;
 }
 
 interface processedRow extends rawRow {
-  quantity: number
+  quantity: number;
 }
 
 const processedRows: processedRow[] = rawDataFromSpreadsheet
@@ -108,15 +108,15 @@ const processedRows: processedRow[] = rawDataFromSpreadsheet
   // Process duplicates into single entries with increased quantity
   .reduce(function (accumulator: processedRow[], cur: processedRow) {
     let found = accumulator.find(function (elem: processedRow) {
-      return elem.product_id === cur.product_id
-    })
+      return elem.product_id === cur.product_id;
+    });
     if (found) {
-      found.quantity += cur.quantity
+      found.quantity += cur.quantity;
     } else {
-      accumulator.push(cur)
+      accumulator.push(cur);
     }
-    return accumulator
-  }, [])
+    return accumulator;
+  }, []);
 ```
 
 Now, as long as we reference the correctly prefixed value when accessing this data, we should be able to put together a table similar to the following.

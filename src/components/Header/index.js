@@ -1,9 +1,9 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-import "./header.css"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
+import './header.scss';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 const Image = () => {
   const data = useStaticQuery(graphql`
@@ -16,15 +16,15 @@ const Image = () => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <Img
       fluid={data.placeholderImage.childImageSharp.fluid}
       className="header-profile"
     />
-  )
-}
+  );
+};
 
 const Header = ({ siteTitle }) => (
   <header>
@@ -39,15 +39,15 @@ const Header = ({ siteTitle }) => (
               }}
             >
               <Image />
-              <span style={{ display: "inline-block" }}>{siteTitle}</span>
+              <span style={{ display: 'inline-block' }}>{siteTitle}</span>
             </Link>
           </h1>
         </li>
-        <span className={"right-nav"}>
+        <span className={'right-nav'}>
           <li>
             <Link
               activeClassName="active-nav-link"
-              data-page-name={"About"}
+              data-page-name={'About'}
               to="/"
             >
               About
@@ -56,7 +56,7 @@ const Header = ({ siteTitle }) => (
           <li>
             <Link
               activeClassName="active-nav-link"
-              data-page-name={"Projects"}
+              data-page-name={'Projects'}
               to="/projects"
             >
               Projects
@@ -65,7 +65,7 @@ const Header = ({ siteTitle }) => (
           <li>
             <Link
               activeClassName="active-nav-link"
-              data-page-name={"Blog"}
+              data-page-name={'Blog'}
               partiallyActive={true}
               to="/blog"
             >
@@ -76,14 +76,14 @@ const Header = ({ siteTitle }) => (
       </ul>
     </nav>
   </header>
-)
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;

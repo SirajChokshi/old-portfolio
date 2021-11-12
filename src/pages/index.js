@@ -1,29 +1,29 @@
-import React from "react"
-import { graphql, Link } from "gatsby"
+import React from 'react';
+import { graphql, Link } from 'gatsby';
 
-import "normalize.css"
-import "../root.css"
-import "../global.css"
-import "../about.css"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import WorkCard from "../components/WorkCard"
-import PROJECTS from "../PROJECTS"
-import ArticleCard from "../components/ArticleCard"
-import { CssVarsPonyfill } from "css-vars-ponyfill-react"
+import 'normalize.css';
+import '../root.css';
+import '../global.css';
+import '../about.css';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import WorkCard from '../components/WorkCard';
+import PROJECTS from '../constants/PROJECTS';
+import ArticleCard from '../components/ArticleCard';
+import { CssVarsPonyfill } from 'css-vars-ponyfill-react';
 
 const IndexPage = ({
   data: {
     allMarkdownRemark: { edges },
   },
 }) => {
-  CssVarsPonyfill()
+  CssVarsPonyfill();
   return (
     <Layout>
       <SEO title="Home" />
-      <h2 className={"page-title"}>Hi, I'm Siraj.</h2>
-      <p className={"box-all"} id={"bio"}>
-        I’m a software engineer and designer from Boston, MA studying at{" "}
+      <h2 className={'page-title'}>Hi, I'm Siraj.</h2>
+      <p className={'box-all'} id={'bio'}>
+        I’m a software engineer and designer from Boston, MA studying at{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -33,7 +33,7 @@ const IndexPage = ({
           UIUC
         </a>
         .<br />
-        Currently, software engineer intern at{" "}
+        Currently, software engineer intern at{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -41,8 +41,8 @@ const IndexPage = ({
           data-link-color="lyft"
         >
           Lyft
-        </a>{" "}
-        and product for non-profits at{" "}
+        </a>{' '}
+        and product for non-profits at{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -52,7 +52,7 @@ const IndexPage = ({
           Hack4Impact
         </a>
         .<br />
-        Formerly,{" "}
+        Formerly,{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -61,7 +61,7 @@ const IndexPage = ({
         >
           LinkedIn
         </a>
-        , a startup,{" "}
+        , a startup,{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -70,7 +70,7 @@ const IndexPage = ({
         >
           AbbVie
         </a>
-        , and research at{" "}
+        , and research at{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -82,14 +82,14 @@ const IndexPage = ({
       </p>
       <ul className="social box-all">
         <li>
-          <a href="/resume.pdf" target={"_blank"} rel="noreferrer">
+          <a href="/resume.pdf" target={'_blank'} rel="noreferrer">
             Resume
           </a>
         </li>
         <li>
           <a
             href="https://github.com/SirajChokshi"
-            target={"_blank"}
+            target={'_blank'}
             rel="noreferrer"
             data-link-color="github"
           >
@@ -99,7 +99,7 @@ const IndexPage = ({
         <li>
           <a
             href="https://linkedin.com/in/sirajchokshi"
-            target={"_blank"}
+            target={'_blank'}
             rel="noreferrer"
             data-link-color="linkedin"
           >
@@ -109,7 +109,7 @@ const IndexPage = ({
         <li>
           <a
             href="https://twitter.com/sirajchokshi"
-            target={"_blank"}
+            target={'_blank'}
             rel="noreferrer"
             data-link-color="twitter"
           >
@@ -121,7 +121,7 @@ const IndexPage = ({
       <div className="grid-wrapper">
         {[...PROJECTS].slice(0, 4).map(p => (
           <WorkCard
-            key={"card_" + p.name}
+            key={'card_' + p.name}
             name={p.name}
             year={p.year}
             desc={p.desc}
@@ -132,7 +132,7 @@ const IndexPage = ({
           />
         ))}
       </div>
-      <Link to={"/projects"} className={"project-link arrow-link"}>
+      <Link to={'/projects'} className={'project-link arrow-link'}>
         View All Projects
       </Link>
       <h3>Writing</h3>
@@ -143,17 +143,17 @@ const IndexPage = ({
           .map(edge => {
             return (
               <ArticleCard key={edge.node.id} post={edge.node.frontmatter} />
-            )
+            );
           })}
       </span>
-      <Link to={"/blog"} className={"project-link arrow-link"}>
+      <Link to={'/blog'} className={'project-link arrow-link'}>
         View All Posts
       </Link>
     </Layout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
 
 export const pageQuery = graphql`
   query {
@@ -173,4 +173,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

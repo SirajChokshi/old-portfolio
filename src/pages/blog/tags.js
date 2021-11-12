@@ -1,8 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
-import SEO from "../../components/seo"
-import Layout from "../../components/layout"
-import { Link, graphql } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types';
+import SEO from '../../components/seo';
+import Layout from '../../components/layout';
+import { Link, graphql } from 'gatsby';
 const TagsPage = ({
   data: {
     allMarkdownRemark: { group },
@@ -13,23 +13,23 @@ const TagsPage = ({
 }) => (
   <Layout>
     <SEO title="Tags" />
-    <h2 className={"page-title"}>Tags</h2>
+    <h2 className={'page-title'}>Tags</h2>
     <ul
-      className={"tags"}
-      style={{ listStyle: "none", paddingLeft: 0, marginTop: "2em" }}
+      className={'tags'}
+      style={{ listStyle: 'none', paddingLeft: 0, marginTop: '2em' }}
     >
       {group
         .sort((a, b) => b.totalCount - a.totalCount)
         .map(tag => (
-          <li key={tag.fieldValue} style={{ display: "inline-block" }}>
-            <h3 style={{ margin: "0.6em 0" }}>
+          <li key={tag.fieldValue} style={{ display: 'inline-block' }}>
+            <h3 style={{ margin: '0.6em 0' }}>
               <Link
                 data-tag-name={tag.fieldValue}
-                className={"tag-link"}
+                className={'tag-link'}
                 to={`/blog/tags/${tag.fieldValue
-                  .replace(/([A-Z]+)/g, " $1")
-                  .replace(/([A-Z][a-z])/g, " $1")
-                  .replace(/\s+/g, "-")
+                  .replace(/([A-Z]+)/g, ' $1')
+                  .replace(/([A-Z][a-z])/g, ' $1')
+                  .replace(/\s+/g, '-')
                   .toLowerCase()
                   .substring(1)}/`}
               >
@@ -43,7 +43,7 @@ const TagsPage = ({
       &larr; All Posts
     </Link>
   </Layout>
-)
+);
 
 TagsPage.propTypes = {
   data: PropTypes.shape({
@@ -61,8 +61,8 @@ TagsPage.propTypes = {
       }),
     }),
   }),
-}
-export default TagsPage
+};
+export default TagsPage;
 export const pageQuery = graphql`
   query {
     site {
@@ -77,4 +77,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

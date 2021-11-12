@@ -1,10 +1,10 @@
 ---
-path: "/blog/startup-job-board"
-date: "2020-01-20"
-title: "Creating a Job Board for Startups at UIUC"
-tags: ["React", "Web Applications"]
-abstract: "The process of creating a student job board focused on startups at the University of Illinois at Urbana-Champaign."
-photo: ""
+path: '/blog/startup-job-board'
+date: '2020-01-20'
+title: 'Creating a Job Board for Startups at UIUC'
+tags: ['React', 'Web Applications']
+abstract: 'The process of creating a student job board focused on startups at the University of Illinois at Urbana-Champaign.'
+photo: ''
 ---
 
 ## Scoping & Design

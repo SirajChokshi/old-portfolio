@@ -1,10 +1,10 @@
 ---
-path: "/blog/my-first-post"
-date: "2020-05-24"
-title: "What JavaScript Developers Can Learn From Haskell"
-tags: ["JavaScript", "Haskell"]
-abstract: "How to (and why you should) start unifying your online presence with a personal branding."
-photo: "https://picsum.photos/800/400"
+path: '/blog/my-first-post'
+date: '2020-05-24'
+title: 'What JavaScript Developers Can Learn From Haskell'
+tags: ['JavaScript', 'Haskell']
+abstract: 'How to (and why you should) start unifying your online presence with a personal branding.'
+photo: 'https://picsum.photos/800/400'
 ---
 
 ## Overview

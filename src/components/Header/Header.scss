@@ -1,71 +1,73 @@
 header {
   clear: both;
   padding-bottom: 30px;
+
+  h1 {
+    float: left;
+  }
 }
 
 main {
   clear: both;
 }
 
-header h1 {
-  float: left;
-}
+nav {
+  ul {
+    list-style: none;
+    padding: 0;
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
+    .right-nav {
+      float: right;
+    }
 
-nav ul li {
-  font-size: 18px;
-  vertical-align: middle;
-  display: inline-block;
-  line-height: 60px;
-  height: 60px;
-  margin-left: 22px;
-  text-align: center;
-}
+    li {
+      font-size: 18px;
+      vertical-align: middle;
+      display: inline-block;
+      line-height: 60px;
+      height: 60px;
+      margin-left: 22px;
+      text-align: center;
 
-nav ul .right-nav {
-  float: right;
-}
+      &#title {
+        text-align: left;
+        float: left;
+        margin: 0;
 
-nav ul li a {
-  text-decoration: none;
-  color: var(--font-color);
-  opacity: 1;
-}
+        a {
+          color: var(--font-color);
+          opacity: 1;
+        }
+      }
 
-nav ul li a:before {
-  display: block;
-  content: attr(data-page-name);
-  font-weight: 600;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
+      a {
+        text-decoration: none;
+        color: var(--font-color);
+        opacity: 1;
+
+        &:before {
+          display: block;
+          content: attr(data-page-name);
+          font-weight: 600;
+          height: 0;
+          overflow: hidden;
+          visibility: hidden;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
 
 .active-nav-link {
   font-weight: 600;
-}
 
-.active-nav-link:hover {
-  color: inherit;
-}
-
-nav ul li a:hover {
-  opacity: 1;
-}
-
-nav ul li#title {
-  text-align: left;
-  float: left;
-  margin: 0;
-}
-
-nav ul li#title a {
-  color: var(--font-color);
-  opacity: 1;
+  &:hover {
+    color: inherit;
+  }
 }
 
 .header-profile {
