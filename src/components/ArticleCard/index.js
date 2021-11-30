@@ -21,7 +21,7 @@ const ArticleCard = ({ post, hidedate }) => (
       <p>{post.abstract}</p>
       <ul className={'tags'}>
         {post.tags.map(tag => (
-          <li>
+          <li key={tag}>
             <Link
               to={`/blog/tags/${tag
                 .replace(/([A-Z]+)/g, ' $1')

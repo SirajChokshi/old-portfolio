@@ -36,7 +36,7 @@ const Projects = () => {
           alignItems: 'center',
         }}
       >
-        <h2 className={'page-title'}>Projects</h2>
+        <h2 className="page-title">Projects</h2>
         <span>
           <select
             style={{ border: 'none', color: '#8a8a8a', maxWidth: '200px' }}
