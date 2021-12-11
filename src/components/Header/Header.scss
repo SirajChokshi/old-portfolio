@@ -1,15 +1,10 @@
 header {
-  clear: both;
-  padding-bottom: 30px;
-
   nav {
     ul {
+      display: flex;
+      justify-content: space-between;
       list-style: none;
       padding: 0;
-
-      .right-nav {
-        float: right;
-      }
 
       li {
         font-size: 18px;
@@ -22,12 +17,7 @@ header {
 
         &#title {
           text-align: left;
-          float: left;
           margin: 0;
-
-          h1 {
-            float: left;
-          }
 
           a {
             color: var(--font-color);
@@ -56,10 +46,6 @@ header {
       }
     }
   }
-}
-
-main {
-  clear: both;
 }
 
 .active-nav-link {
@@ -118,12 +104,7 @@ main {
   header {
     padding-bottom: 0;
 
-    nav ul li#title {
-      float: none;
-    }
-
     nav ul .right-nav {
-      float: none;
       display: flex;
       justify-content: space-between;
 
